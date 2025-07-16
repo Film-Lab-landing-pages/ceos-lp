@@ -2,22 +2,17 @@ import styled from "styled-components";
 import { colors } from "@/styles/globalStyles";
 
 export const ParaQuemContainer = styled.section`
-  margin-bottom: 5rem;
-  margin-top: 5rem;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto auto auto auto;
+  margin: 5rem auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
 
-  h2 {
-    grid-row: 1;
-    grid-column: 1/13;
-  }
   .explanation {
-    padding: 1rem 2rem;
-    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
-    grid-row: 2;
-    grid-column: 1/12;
 
     span {
       color: ${colors.yellow};
@@ -25,12 +20,11 @@ export const ParaQuemContainer = styled.section`
   }
 
   .grid {
-    grid-row: 3;
-    grid-column: 2/ 12;
+    width: 100%;
     margin-top: 2rem;
     display: flex;
-    justify-content: center;
-    gap: 5%;
+    justify-content: space-between;
+    gap: 7.5%;
   }
   .grid-item {
     display: flex;
@@ -42,11 +36,12 @@ export const ParaQuemContainer = styled.section`
     padding: 2rem 0 5rem;
     h3 {
       font-weight: 400;
-      font-size: 1.5rem;
+      font-size: 2rem;
       width: 50%;
+      margin-top: 2rem;
     }
     p {
-      width: 80%;
+      width: 50%;
     }
   }
 
@@ -57,11 +52,10 @@ export const ParaQuemContainer = styled.section`
     border-radius: 8px;
     border: 1px solid #ffffff1a;
     backdrop-filter: blur(60px);
+    margin-top: 2rem;
   }
   button {
     margin-top: 3rem;
-    grid-row: 4;
-    grid-column: 6/ 8;
     justify-self: center;
   }
 `;

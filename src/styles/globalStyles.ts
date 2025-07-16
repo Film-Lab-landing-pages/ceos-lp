@@ -8,7 +8,7 @@ export const colors = {
 
 export const Title = styled.h2`
   color: ${colors.yellow};
-  font-size: 4em;
+  font-size: 5em;
 `;
 
 interface ButtonProps {
