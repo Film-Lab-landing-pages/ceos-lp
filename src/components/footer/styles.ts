@@ -10,8 +10,7 @@ export const FooterContainer = styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  bottom: 0;
+
   .logo-and-copyright {
     display: flex;
     align-items: center;
