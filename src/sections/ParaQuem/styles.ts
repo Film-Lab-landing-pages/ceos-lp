@@ -39,9 +39,16 @@ export const ParaQuemContainer = styled.section`
       font-size: 2rem;
       width: 50%;
       margin-top: 2rem;
+      margin-bottom: 0;
     }
     p {
-      width: 50%;
+      color: #ffffffb2;
+      width: 65%;
+      font-weight: 300;
+      font-style: Light;
+      font-size: 1.2rem;
+      line-height: 2rem;
+      margin-top: 0;
     }
   }
 
