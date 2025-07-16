@@ -1,0 +1,9 @@
+:root {
+  /* Cores */
+  --color-white: #ffffff;
+  --color-yellow: #ffc802;
+  --color-black: #000000;
+
+  /* Fontes */
+  --font-poppins: 'Poppins', sans-serif;
+}
