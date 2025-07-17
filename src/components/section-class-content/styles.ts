@@ -12,17 +12,6 @@ export const Grid = styled.div`
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 8.33vh);
   width: 100%;
-
-  background-image: repeating-linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.2) 0 3px,
-      transparent 1px calc((100% / 12) - 1px)
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      rgba(0, 255, 0, 0.2) 0 3px,
-      transparent 1px calc(100% / 12 - 1px)
-    );
 `
 
 export const Header = styled.div`
