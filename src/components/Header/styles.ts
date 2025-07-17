@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { Card } from "../../styles/globalStyles";
 
 export const HeaderContainer = styled(Card).attrs({ as: "header" })`
-  width: 100%;
+  width: 80%;
+
   height: 70px;
-  margin-top: 9rem;
-  margin-bottom: 2.5rem;
+  margin: 5rem auto 2.5rem;
   border-radius: 8px;
 
   nav {

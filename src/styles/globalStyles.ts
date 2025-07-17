@@ -26,7 +26,7 @@ export const Button = styled.button<ButtonProps>`
   font-style: bold;
   border: none;
   border-radius: 8px;
-  box-shadow: 0 0 12px 2px rgba(255, 200, 2);
+  box-shadow: 0 0 12px 2px ${colors.yellow};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,5 +36,6 @@ export const Card = styled.div`
   background: #ffffff0d;
   border-radius: 16px;
   border: 1px solid #ffffff1a;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(60px);
 `;
