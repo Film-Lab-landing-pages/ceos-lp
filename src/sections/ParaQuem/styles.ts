@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { colors } from "@/styles/globalStyles";
 
 export const ParaQuemContainer = styled.section`
-  margin: 5rem auto;
+  margin: 5.5rem auto;
   display: flex;
   align-items: center;
   flex-direction: column;
