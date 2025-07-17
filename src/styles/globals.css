@@ -1,9 +1,9 @@
 /* Inportação de Variáveis */
-@import './variables.css';
+@import "./variables.css";
 
 /* Inportações de Fontes */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Reset dos Estilos Globais */
 
@@ -19,10 +19,11 @@ html {
 }
 
 body {
-  font-family: var(--font-archivo);
-  color: var(--color-black);
+  font-family: var(--font-poppins);
+  color: var(--color-white);
   background-color: var(--color-white);
   line-height: 1.5;
+  background-color: #0b0b0b;
 }
 
 /* Classes Fonte Archivo */
@@ -59,4 +60,9 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.main-container {
+  width: 90%;
+  margin: 0 auto;
 }
