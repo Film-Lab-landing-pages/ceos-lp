@@ -1,10 +1,15 @@
 'use client'
 
-import React from 'react'
 import { Card, Title, Grid } from '@/styles/globalStyles'
 import * as S from './styles'
 
-const ASolucao: React.FC = () => {
+const solutions = [
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tellus id massa pretium semper aliquet ac.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tellus id massa pretium semper aliquet ac.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tellus id massa pretium semper aliquet ac.',
+]
+
+const ASolucao = () => {
   return (
     <S.ASolucaoContainer>
       <Grid>
@@ -14,33 +19,23 @@ const ASolucao: React.FC = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
             tellus id massa pretium semper aliquet ac metus.
           </S.SubtitleMainText>
-          <S.SubtitleSpan className="poppins-bold">
+          <S.SubtitleSpan>
             In lacinia eros sed nulla dignissim, eu ultricies nisi lacinia.
           </S.SubtitleSpan>
         </S.SubtitleWrapper>
+
         <Card>
           <S.CardContent>
-            <S.CardItem>
-              <S.CardItemText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                nec tellus id massa pretium semper aliquet ac
-              </S.CardItemText>
-              <S.CardItemIcon>Incluir um icone de estrela</S.CardItemIcon>
-            </S.CardItem>
-            <S.CardItem>
-              <S.CardItemText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                nec tellus id massa pretium semper aliquet ac
-              </S.CardItemText>
-              <S.CardItemIcon>Incluir um icone de estrela</S.CardItemIcon>
-            </S.CardItem>
-            <S.CardItem>
-              <S.CardItemText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                nec tellus id massa pretium semper aliquet ac
-              </S.CardItemText>
-              <S.CardItemIcon>Incluir um icone de estrela</S.CardItemIcon>
-            </S.CardItem>
+            {solutions.map((text, index) => (
+              <S.CardItem key={index}>
+                <S.CardItemText>{text}</S.CardItemText>
+                <S.CardItemIcon>
+                  <S.Icon />
+                  Inserir Icon Aqui
+                  <S.Icon />
+                </S.CardItemIcon>
+              </S.CardItem>
+            ))}
           </S.CardContent>
         </Card>
       </Grid>
