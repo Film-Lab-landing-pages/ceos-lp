@@ -12,13 +12,7 @@ export const Section = styled.section`
   background: url('/images/bg_lp_home.png') center center no-repeat;
   background-size: cover;
 `
-export const Card = styled(GlobalCard)`
-  grid-column: 2 / 7; // coluna 2 até 6 (inclusive)
-  grid-row: 3 / 7; // linha 3 até 6 (inclusive) → 4 linhas
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-`
+
 export const ContentContainer = styled.div`
   grid-column: 2 / 8;
   grid-row: 3 / 12;
@@ -27,7 +21,7 @@ export const ContentContainer = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 4rem;
+  gap: 15rem;
 `
 
 export const CardContent = styled.div`
@@ -36,12 +30,14 @@ export const CardContent = styled.div`
   align-items: flex-start;
   gap: 12px;
   padding: 2rem;
-  grid-column: 2 / 7;
+  grid-column: 2 / 6;
+  grid-row: 3 / 7;
 `
 
 export const CardHeader = styled.h1`
   color: var(--color-yellow);
   font-size: 38px;
+  margin-bottom: 1rem;
   padding: 6px 18px;
   border-radius: 6px;
   border: 1px solid var(--color-yellow);
