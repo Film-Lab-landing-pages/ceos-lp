@@ -12,7 +12,8 @@ export default function Home() {
       <Header clasname="width-container" />
       <LPHome />
       <SectionClassContent />
-      <ParaQuem clasname="width-container" />
+      <ParaQuem />
+      <QuemNaoEVisto />
 
       <Footer />
     </div>

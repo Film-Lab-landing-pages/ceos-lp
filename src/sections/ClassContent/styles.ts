@@ -1,15 +1,13 @@
-import { Button, Card } from "@/styles/globalStyles";
+import { Section } from "@/styles/globalStyles";
 import styled from "styled-components";
 
 interface ButtonProps {
   size: "small" | "large";
 }
 
-export const Section = styled.section`
-  width: 100%;
+export const ClassSection = styled(Section)`
   height: 828px;
   background: url("/images/bg_section02.png") center center no-repeat;
-  background-size: cover;
 `;
 
 export const Header = styled.div`
@@ -56,6 +54,11 @@ export const CenterContainer = styled.div`
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   }
+  button {
+    grid-column: 1 / 13;
+    grid-row: 12;
+    justify-self: center;
+  }
 `;
 
 export const RightContainer = styled.div`
@@ -93,10 +96,4 @@ export const RightList = styled.ul`
 
     font-weight: 300;
   }
-`;
-
-export const EnrollButton = styled(Button)<ButtonProps>`
-  grid-column: 1 / 13;
-  grid-row: 12;
-  justify-self: center;
 `;

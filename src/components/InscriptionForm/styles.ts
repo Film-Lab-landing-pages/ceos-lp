@@ -5,8 +5,14 @@ export const InscriptionContainer = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+
+  &.active {
+    opacity: 1;
+  }
   form {
     position: fixed;
     top: 50%;
@@ -38,7 +44,7 @@ export const InscriptionContainer = styled.div`
       font-size: 1.2rem;
     }
     button {
-      background-color: ${colors.yellow};
+      background-color: var(--color-yellow);
       font-weight: 900;
       font-size: 1.6rem;
     }

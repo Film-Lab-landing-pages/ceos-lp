@@ -23,7 +23,7 @@ body {
   color: var(--color-white);
   background-color: var(--color-white);
   line-height: 1.5;
-  background-color: #0b0b0b;
+  background-color: var(--color-black);
 }
 
 /* Classes Fonte Archivo */
@@ -60,9 +60,4 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-.width-container {
-  width: 90%;
-  margin: 0 auto;
 }
