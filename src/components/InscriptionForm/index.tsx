@@ -5,11 +5,14 @@ import { InscriptionContainer } from "./styles";
 import { useInscriptionStore } from "@/store/store";
 
 const InscriptionForm: React.FC = () => {
-  const { isFormVisible, hideForm } = useInscriptionStore();
+  const { isFormVisible, isActive, hideForm } = useInscriptionStore();
   return (
     <>
       {isFormVisible && (
-        <InscriptionContainer>
+        <InscriptionContainer
+          id="inscription-form"
+          className={isActive ? "active" : ""}
+        >
           <form>
             <input type="text" placeholder="Nome" />
             <input type="email" placeholder="Email" />

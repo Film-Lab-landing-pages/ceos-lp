@@ -15,7 +15,7 @@ export const ParaQuemContainer = styled.section`
     font-weight: 600;
 
     span {
-      color: ${colors.yellow};
+      color: var(--color-yellow);
     }
   }
 

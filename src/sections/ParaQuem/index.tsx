@@ -2,6 +2,7 @@
 import React from "react";
 import { ParaQuemContainer } from "./styles";
 import { Button, Card, Title } from "@/styles/globalStyles";
+import InscriptionButton from "@/components/InscriptionButton";
 
 const ParaQuem: React.FC = () => {
   return (
@@ -40,7 +41,7 @@ const ParaQuem: React.FC = () => {
           </p>
         </Card>
       </div>
-      <Button size="small">Inscrição</Button>
+      <InscriptionButton />
     </ParaQuemContainer>
   );
 };
