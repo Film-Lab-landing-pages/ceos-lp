@@ -3,14 +3,15 @@ import styled from "styled-components";
 
 export const colors = {
   white: "#ffffff",
-  yellow: "#ffc802",
   black: "#000000",
   offWhite: "#D9D9D9",
 };
 
 export const Title = styled.h2`
-  color: ${colors.yellow};
+  color: var(--color-yellow);
   font-size: 5em;
+  font-weight: bold;
+  /* line-height: 1; */
 `;
 
 interface ButtonProps {
@@ -19,23 +20,37 @@ interface ButtonProps {
 
 export const Button = styled.button<ButtonProps>`
   width: 15rem;
-  background-color: ${colors.yellow};
+  height: 4rem;
+  color: var(--color-black);
+  background-color: rgba(255, 200, 2, 0.85);
   padding: ${(props) => (props.size === "small" ? "8px 16px" : "16px 32px")};
   font-size: ${(props) => (props.size === "small" ? "1.2rem" : "1.8rem")};
   font-weight: 700;
   font-style: bold;
   border: none;
   border-radius: 8px;
-  box-shadow: 0 0 12px 2px ${colors.yellow};
+  box-shadow: 0 0 20px 6px rgba(255, 200, 2, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
 `;
 
 export const Card = styled.div`
-  background: #ffffff0d;
+  max-height: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
-  border: 1px solid #ffffff1a;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(60px);
+  backdrop-filter: blur(10px); //60px no do Diego
+  -webkit-backdrop-filter: blur(10px);
+`;
+
+export const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  width: 100%;
+  height: 100%;
 `;
