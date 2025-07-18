@@ -1,21 +1,21 @@
-import { off } from "process";
-import styled from "styled-components";
+import { off } from 'process'
+import styled from 'styled-components'
 
 export const colors = {
-  white: "#ffffff",
-  black: "#000000",
-  offWhite: "#D9D9D9",
-};
+  white: '#ffffff',
+  black: '#000000',
+  offWhite: '#D9D9D9',
+}
 
 export const Title = styled.h2`
   color: var(--color-yellow);
   font-size: 5em;
   font-weight: bold;
   /* line-height: 1; */
-`;
+`
 
 interface ButtonProps {
-  size: "small" | "large";
+  size: 'small' | 'large'
 }
 
 export const Button = styled.button<ButtonProps>`
@@ -23,8 +23,8 @@ export const Button = styled.button<ButtonProps>`
   height: 4rem;
   color: var(--color-black);
   background-color: rgba(255, 200, 2, 0.85);
-  padding: ${(props) => (props.size === "small" ? "8px 16px" : "16px 32px")};
-  font-size: ${(props) => (props.size === "small" ? "1.2rem" : "1.8rem")};
+  padding: ${(props) => (props.size === 'small' ? '8px 16px' : '16px 32px')};
+  font-size: ${(props) => (props.size === 'small' ? '1.2rem' : '1.8rem')};
   font-weight: 700;
   font-style: bold;
   border: none;
@@ -35,7 +35,7 @@ export const Button = styled.button<ButtonProps>`
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s;
-`;
+`
 
 export const Card = styled.div`
   max-height: 100%;
@@ -45,7 +45,7 @@ export const Card = styled.div`
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px); //60px no do Diego
   -webkit-backdrop-filter: blur(10px);
-`;
+`
 
 export const Grid = styled.div`
   display: grid;
@@ -53,4 +53,7 @@ export const Grid = styled.div`
   grid-template-rows: repeat(12, 1fr);
   width: 100%;
   height: 100%;
-`;
+  margin: 0 auto;
+  padding: 0 1rem;
+  gap: 1rem;
+`
