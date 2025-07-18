@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Card, Section } from "@/styles/globalStyles";
 
 export const VistoSection = styled(Section)`
-  height: 828px;
+  padding: 5rem 0;
   background: url("/images/bg_section02.png") center center no-repeat;
 `;
 
@@ -16,6 +16,18 @@ export const Container = styled.div`
   h2 {
     font-size: 3.6rem;
   }
+  h3 {
+    font-weight: 400;
+    font-size: 1.8em;
+    font-style: regular;
+  }
+  p {
+    font-weight: 300;
+    font-style: Light;
+    font-size: 1.2em;
+    line-height: 2.5em;
+    opacity: 0.7;
+  }
 `;
 
 export const VistoCard = styled(Card)`
@@ -23,7 +35,7 @@ export const VistoCard = styled(Card)`
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding: 2rem 7.5%;
+  padding: 2rem 7%;
   img {
     height: 70px;
   }
