@@ -7,7 +7,7 @@ import ParaQuem from "@/sections/ParaQuem";
 export default function Home() {
   return (
     <div>
-      {/*  <InscriptionForm /> */}
+      <InscriptionForm />
       <Header clasname="width-container" />
       <SectionClassContent />
       <ParaQuem clasname="width-container" />

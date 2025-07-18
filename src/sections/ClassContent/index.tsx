@@ -4,7 +4,6 @@ import React from "react";
 import {
   Section,
   Subtitle,
-  EnrollButton,
   RightList,
   Header,
   RightContainer,
@@ -12,6 +11,7 @@ import {
   CenterContainer,
 } from "./styles";
 import { Title, Grid, Card } from "@/styles/globalStyles";
+import InscriptionButton from "@/components/InscriptionButton";
 
 export default function SectionClassContent() {
   return (
@@ -36,9 +36,7 @@ export default function SectionClassContent() {
 
         <CenterContainer>
           <img src="/images/ceo.png" alt="CEO com pilha de dinheiro" />
-          <EnrollButton size="small" className="poppins-xbold class-content">
-            Inscrição
-          </EnrollButton>
+          <InscriptionButton />
         </CenterContainer>
 
         <RightContainer>

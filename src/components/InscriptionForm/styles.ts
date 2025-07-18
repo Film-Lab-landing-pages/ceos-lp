@@ -38,7 +38,7 @@ export const InscriptionContainer = styled.div`
       font-size: 1.2rem;
     }
     button {
-      background-color: ${colors.yellow};
+      background-color: var(--color-yellow);
       font-weight: 900;
       font-size: 1.6rem;
     }

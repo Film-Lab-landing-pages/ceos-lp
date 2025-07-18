@@ -56,6 +56,11 @@ export const CenterContainer = styled.div`
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   }
+  button {
+    grid-column: 1 / 13;
+    grid-row: 12;
+    justify-self: center;
+  }
 `;
 
 export const RightContainer = styled.div`
@@ -93,10 +98,4 @@ export const RightList = styled.ul`
 
     font-weight: 300;
   }
-`;
-
-export const EnrollButton = styled(Button)<ButtonProps>`
-  grid-column: 1 / 13;
-  grid-row: 12;
-  justify-self: center;
 `;
