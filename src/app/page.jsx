@@ -1,4 +1,4 @@
-import Footer from '@/components/footer'
+import Footer from '@/components/Footer'
 import SectionClassContent from '@/sections/ClassContent'
 import Header from '@/components/Header'
 import InscriptionForm from '@/components/InscriptionForm'
@@ -13,7 +13,6 @@ export default function Home() {
       <LPHome />
       <SectionClassContent />
       <ParaQuem />
-      <QuemNaoEVisto />
 
       <Footer />
     </div>
