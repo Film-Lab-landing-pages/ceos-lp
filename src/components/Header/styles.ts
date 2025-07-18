@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Card } from "../../styles/globalStyles";
 
 export const HeaderContainer = styled(Card).attrs({ as: "header" })`
-  width: 80%;
+  width: 50%;
 
   height: 70px;
   margin: 5rem auto 2.5rem;

@@ -1,19 +1,12 @@
 import Footer from "@/components/Footer";
-import SectionClassContent from "@/sections/ClassContent";
 import Header from "@/components/Header";
-import InscriptionForm from "@/components/InscriptionForm";
-import ParaQuem from "@/sections/ParaQuem";
 import QuemNaoEVisto from "@/sections/QuemNaoEVisto";
 
 export default function Home() {
   return (
     <div>
-      <InscriptionForm />
       <Header />
-      <SectionClassContent />
-      <ParaQuem />
       <QuemNaoEVisto />
-
       <Footer />
     </div>
   );

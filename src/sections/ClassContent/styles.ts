@@ -1,15 +1,13 @@
-import { Button, Card } from "@/styles/globalStyles";
+import { Section } from "@/styles/globalStyles";
 import styled from "styled-components";
 
 interface ButtonProps {
   size: "small" | "large";
 }
 
-export const Section = styled.section`
-  width: 100%;
+export const ClassSection = styled(Section)`
   height: 828px;
   background: url("/images/bg_section02.png") center center no-repeat;
-  background-size: cover;
 `;
 
 export const Header = styled.div`

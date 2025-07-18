@@ -2,20 +2,20 @@
 
 import React from "react";
 import {
-  Section,
   Subtitle,
   RightList,
   Header,
   RightContainer,
   LeftContainer,
   CenterContainer,
+  ClassSection,
 } from "./styles";
 import { Title, Grid, Card } from "@/styles/globalStyles";
 import InscriptionButton from "@/components/InscriptionButton";
 
 export default function SectionClassContent() {
   return (
-    <Section>
+    <ClassSection>
       <Grid>
         <Header>
           <Title className="poppins-bold">Conteúdo Da Aula</Title>
@@ -53,6 +53,6 @@ export default function SectionClassContent() {
           </Card>
         </RightContainer>
       </Grid>
-    </Section>
+    </ClassSection>
   );
 }

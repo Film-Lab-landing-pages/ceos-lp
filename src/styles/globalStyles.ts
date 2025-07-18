@@ -54,3 +54,8 @@ export const Grid = styled.div`
   width: 100%;
   height: 100%;
 `;
+export const Section = styled.section`
+  width: 100%;
+  background: url("/images/bg_section02.png") center center no-repeat;
+  background-size: contain;
+`;
