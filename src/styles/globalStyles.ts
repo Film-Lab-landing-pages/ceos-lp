@@ -29,7 +29,7 @@ export const Button = styled.button<ButtonProps>`
   font-style: bold;
   border: none;
   border-radius: 8px;
-  box-shadow: 0 0 20px 6px rgba(255, 200, 2, 0.5);
+  box-shadow: 0 0 8px 4px rgba(255, 200, 2, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,5 +1,5 @@
 import Footer from "@/components/Footer";
-import SectionClassContent from "@/components/section-class-content";
+import SectionClassContent from "@/sections/ClassContent";
 import Header from "@/components/Header";
 import InscriptionForm from "@/components/InscriptionForm";
 import ParaQuem from "@/sections/ParaQuem";

@@ -15,6 +15,7 @@ export const Section = styled.section`
 export const Header = styled.div`
   grid-column: 2 / 12;
   grid-row: 2 / 4;
+  padding: 1rem;
 `;
 
 export const Subtitle = styled.p`
@@ -26,47 +27,48 @@ export const Subtitle = styled.p`
 export const LeftContainer = styled.div`
   grid-column: 2 / 5;
   grid-row: 4 / 12;
-
+  padding: 1rem;
+  div {
+    padding: 16px;
+  }
   h3 {
-    font-size: 42px;
+    font-size: 4rem;
     margin-bottom: 12px;
-    line-height: 45px;
-    margin-left: 39px;
+    line-height: 4rem;
     color: #ffffff;
     word-break: break-word;
   }
+  p {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 30px;
+  }
 `;
 
-export const Description = styled.p`
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.7);
-  line-height: 30px;
-  margin-left: 39px;
-`;
-
-export const CenterImage = styled.div`
+export const CenterContainer = styled.div`
   grid-column: 5 / 9;
   grid-row: 4 / 12;
-  padding: 10px;
+  padding: 1rem;
 
   img {
     width: 100%;
-    /*     height: 630px; */
+    margin-bottom: 1.5rem;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   }
 `;
 
-export const RightCard = styled.div`
+export const RightContainer = styled.div`
   grid-column: 9 / 12;
-  grid-row: 7 / 10;
-  color: white;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  grid-row: 6 / 12;
+  padding: 1rem;
 
+  div {
+    padding: 16px;
+  }
   h3 {
-    font-size: 30px;
-    margin-bottom: 25px;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
     font-family: var(--font-poppins);
     width: 100%;
   }
@@ -74,24 +76,23 @@ export const RightCard = styled.div`
 
 export const RightList = styled.ul`
   list-style: decimal-leading-zero;
-  font-family: var(--font-poppins);
-  padding-left: 20px;
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-`;
+  div {
+  }
+  li {
+    margin-left: 16px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 30px;
 
-export const ListItem = styled.li`
-  font-size: 16px;
-  margin-bottom: 10px;
-  color: rgba(255, 255, 255, 0.7);
-  line-height: 30px;
-  text-align: justify; /* Justifica o texto */
+    font-weight: 300;
+  }
 `;
 
 export const EnrollButton = styled(Button)<ButtonProps>`
