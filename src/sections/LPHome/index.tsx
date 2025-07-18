@@ -3,7 +3,7 @@
 import React from 'react'
 import { Grid } from '@/styles/globalStyles'
 import * as S from './styles'
-import { EnrollButton } from '../ClassContent/styles'
+import { Button } from '@/styles/globalStyles'
 
 const LPHome: React.FC = () => {
   return (
@@ -30,9 +30,9 @@ const LPHome: React.FC = () => {
         </S.DescriptionWrapper>
 
         <S.ButtonWrapper>
-          <EnrollButton size="large" className="poppins-xbold class-content">
+          <Button size="large" className="poppins-xbold class-content">
             Inscrição
-          </EnrollButton>
+          </Button>
         </S.ButtonWrapper>
       </Grid>
     </S.Section>
