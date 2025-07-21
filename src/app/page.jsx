@@ -4,6 +4,7 @@ import InscriptionForm from '@/components/InscriptionForm'
 import ParaQuem from '@/sections/ParaQuem'
 import LPHome from '@/sections/LPHome'
 import ASolucao from '@/sections/ASolucao'
+import Apresentacao from '@/sections/Apresentacao'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <SectionClassContent />
       <ParaQuem />
       <ASolucao />
+      <Apresentacao />
 
       <Footer />
     </div>
