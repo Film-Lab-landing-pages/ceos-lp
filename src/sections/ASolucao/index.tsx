@@ -1,6 +1,7 @@
 'use client'
 
-import { Card, Title, Grid } from '@/styles/globalStyles'
+import Image from 'next/image'
+import { Card, Title } from '@/styles/globalStyles'
 import * as S from './styles'
 
 const solutions = [
@@ -12,8 +13,9 @@ const solutions = [
 const ASolucao = () => {
   return (
     <S.ASolucaoContainer>
-      <Grid>
+      <S.FlexContainer>
         <Title>A Solução</Title>
+
         <S.SubtitleWrapper>
           <S.SubtitleMainText>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
@@ -24,7 +26,7 @@ const ASolucao = () => {
           </S.SubtitleSpan>
         </S.SubtitleWrapper>
 
-        <Card>
+        <S.PositionedCard as={Card}>
           <S.CardContent>
             {solutions.map((text, index) => (
               <S.CardItem key={index}>
@@ -40,8 +42,8 @@ const ASolucao = () => {
               </S.CardItem>
             ))}
           </S.CardContent>
-        </Card>
-      </Grid>
+        </S.PositionedCard>
+      </S.FlexContainer>
     </S.ASolucaoContainer>
   )
 }
