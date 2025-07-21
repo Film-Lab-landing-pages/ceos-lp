@@ -1,34 +1,35 @@
-import { Section } from "@/styles/globalStyles";
-import styled from "styled-components";
-import { Container as GlobalContainer } from "@/styles/globalStyles";
+import { Section } from '@/styles/globalStyles'
+import styled from 'styled-components'
+import { Container as GlobalContainer } from '@/styles/globalStyles'
 
 interface ButtonProps {
-  size: "small" | "large";
+  size: 'small' | 'large'
 }
 
 export const ClassSection = styled(Section)`
   margin: 5rem 0;
-  background: url("/images/bg_section02.png") center center no-repeat;
-`;
+  background: url('/images/bg_section02.png') center center no-repeat;
+  background-size: cover;
+`
 
 export const Container = styled(GlobalContainer)`
   width: 80%;
   button {
     margin: 0 auto;
   }
-`;
+`
 
 export const Flex = styled.div`
   display: flex;
   margin-top: 5rem;
   margin-bottom: 2.5rem;
-`;
+`
 
 export const Subtitle = styled.p`
   color: #ccc;
   font-size: 27px;
   line-height: 1;
-`;
+`
 
 export const LeftContainer = styled.div`
   width: 30%;
@@ -50,7 +51,7 @@ export const LeftContainer = styled.div`
     color: rgba(255, 255, 255, 0.7);
     line-height: 30px;
   }
-`;
+`
 
 export const CenterContainer = styled.div`
   padding: 1rem;
@@ -61,7 +62,7 @@ export const CenterContainer = styled.div`
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   }
-`;
+`
 
 export const RightContainer = styled.div`
   width: 30%;
@@ -77,7 +78,7 @@ export const RightContainer = styled.div`
     font-family: var(--font-poppins);
     width: 100%;
   }
-`;
+`
 
 export const RightList = styled.ul`
   list-style: decimal-leading-zero;
@@ -98,4 +99,4 @@ export const RightList = styled.ul`
 
     font-weight: 300;
   }
-`;
+`
