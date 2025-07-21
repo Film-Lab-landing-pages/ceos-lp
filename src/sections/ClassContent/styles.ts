@@ -20,6 +20,7 @@ export const Container = styled(GlobalContainer)`
 
 export const Flex = styled.div`
   display: flex;
+  margin-top: 5rem;
   margin-bottom: 2.5rem;
 `;
 
