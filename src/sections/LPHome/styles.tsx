@@ -1,31 +1,29 @@
-import styled from 'styled-components'
-import { Card as GlobalCard } from '@/styles/globalStyles'
+import styled from "styled-components";
+import {
+  Card as GlobalCard,
+  Container as GlobalContainer,
+} from "@/styles/globalStyles";
 
 export const Section = styled.section`
   width: 100%;
-  height: 1041px;
-  background: url('/images/bg_lp_home.png') center center no-repeat;
+  background: url("/images/bg_lp_home.png") center center no-repeat;
   background-size: cover;
-`
+  padding: 5% 0;
+`;
+
+export const Container = styled(GlobalContainer)`
+  align-items: left;
+`;
 
 export const Card = styled(GlobalCard)`
-  grid-column: 2 / 7;
-  grid-row: 4 / 8;
-
-  @media (max-width: 1440px) {
-    grid-column: 2 / 8;
+  max-width: 50%;
+  h2 {
+    color: var(--color-white);
   }
-  @media (max-width: 1024px) {
-    grid-column: 2 / 12;
-    grid-row: 2 / 6;
+  span {
+    color: var(--color-yellow);
   }
-
-  @media (max-width: 768px) {
-    grid-column: 1 / -1;
-    grid-row: auto;
-    margin: 2rem 1rem;
-  }
-`
+`;
 
 export const CardContent = styled.div`
   display: flex;
@@ -42,11 +40,11 @@ export const CardContent = styled.div`
     padding: 1rem;
     gap: 8px;
   }
-`
+`;
 
 export const CardHeader = styled.h1`
   color: var(--color-yellow);
-  font-size: 38px;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
   padding: 6px 18px;
   border-radius: 6px;
@@ -61,7 +59,7 @@ export const CardHeader = styled.h1`
     font-size: 22px;
     padding: 4px 8px;
   }
-`
+`;
 
 export const CardMainText = styled.p`
   font-size: 71px;
@@ -83,49 +81,18 @@ export const CardMainText = styled.p`
     font-size: 36px;
     line-height: 48px;
   }
-`
+`;
 
-export const CardSpan = styled.span`
-  font-size: 71px;
-  line-height: 91px;
-  color: var(--color-yellow);
-
-  @media (max-width: 768px) {
-    font-size: 50px;
-    line-height: 65px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 36px;
-    line-height: 48px;
-  }
-`
-export const DescriptionWrapper = styled.div`
-  grid-column: 2 / 8;
-  grid-row: 8 / 11;
-
-  @media (max-width: 1440px) {
-    grid-column: 2 / 10;
-  }
-
-  @media (max-width: 1024px) {
-    grid-column: 2 / 12;
-    grid-row: 6 / 9;
-  }
-
-  @media (max-width: 768px) {
-    grid-column: 1 / -1;
-    grid-row: auto;
-    margin: 2rem 1rem;
-  }
-`
 export const Description = styled.p`
-  font-size: 35px;
+  font-size: 3rem;
+  max-width: 60%;
   line-height: 49px;
   color: rgba(255, 255, 255, 0.7);
-  margin: 0;
+  padding: 0 1rem;
+  margin: 5rem 0 5rem;
   text-align: left;
   align-self: start;
+  border-left: 2px solid var(--color-white);
 
   @media (max-width: 768px) {
     font-size: 26px;
@@ -136,7 +103,7 @@ export const Description = styled.p`
     font-size: 20px;
     line-height: 30px;
   }
-`
+`;
 
 export const ButtonWrapper = styled.div`
   grid-column: 2 / 4;
@@ -159,4 +126,4 @@ export const ButtonWrapper = styled.div`
     justify-content: center;
     margin: 2rem 0;
   }
-`
+`;

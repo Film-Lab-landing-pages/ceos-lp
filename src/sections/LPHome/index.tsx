@@ -1,42 +1,41 @@
-'use client'
+"use client";
 
-import React from 'react'
-import { Grid } from '@/styles/globalStyles'
-import * as S from './styles'
-import { Button } from '@/styles/globalStyles'
+import React from "react";
+import * as S from "./styles";
+import { Button, Title } from "@/styles/globalStyles";
+import InscriptionButton from "@/components/InscriptionButton";
+import Header from "@/components/Header";
 
 const LPHome: React.FC = () => {
   return (
     <S.Section>
-      <Grid>
+      <Header />
+      <S.Container>
         <S.Card>
           <S.CardContent>
             <S.CardHeader className="poppins-bold">
               MASTERCLASS PARA CEOs
             </S.CardHeader>
-            <S.CardMainText className="poppins-bold">
+            <Title>
               Quem não é visto,
               <br />
-              <S.CardSpan className="poppins-bold">não é lembrado!</S.CardSpan>
-            </S.CardMainText>
+              <span>não é lembrado!</span>
+            </Title>
           </S.CardContent>
         </S.Card>
-        <S.DescriptionWrapper>
-          <S.Description>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            porttitor est ac risus ullamcorper eleifend. Proin in nibh molestie
-            mauris dapibus molestie ut ut.
-          </S.Description>
-        </S.DescriptionWrapper>
+
+        <S.Description>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+          porttitor est ac risus ullamcorper eleifend. Proin in nibh molestie
+          mauris dapibus molestie ut ut.
+        </S.Description>
 
         <S.ButtonWrapper>
-          <Button size="large" className="poppins-xbold class-content">
-            Inscrição
-          </Button>
+          <InscriptionButton />
         </S.ButtonWrapper>
-      </Grid>
+      </S.Container>
     </S.Section>
-  )
-}
+  );
+};
 
-export default LPHome
+export default LPHome;
