@@ -30,9 +30,12 @@ const ASolucao = () => {
               <S.CardItem key={index}>
                 <S.CardItemText>{text}</S.CardItemText>
                 <S.CardItemIcon>
-                  <S.Icon />
-                  Inserir Icon Aqui
-                  <S.Icon />
+                  <Image
+                    src="/images/estrela_amarela.svg"
+                    alt="Estrela"
+                    width={93}
+                    height={104}
+                  />
                 </S.CardItemIcon>
               </S.CardItem>
             ))}
