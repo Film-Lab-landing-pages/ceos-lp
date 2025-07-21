@@ -1,14 +1,17 @@
-'use client'
+"use client";
 
-import React from 'react'
-import { Grid } from '@/styles/globalStyles'
-import * as S from './styles'
-import { Button } from '@/styles/globalStyles'
+import React from "react";
+import { Grid } from "@/styles/globalStyles";
+import * as S from "./styles";
+import { Button } from "@/styles/globalStyles";
+import InscriptionButton from "@/components/InscriptionButton";
+import Header from "@/components/Header";
 
 const LPHome: React.FC = () => {
   return (
     <S.Section>
       <Grid>
+        <Header />
         <S.Card>
           <S.CardContent>
             <S.CardHeader className="poppins-bold">
@@ -30,13 +33,11 @@ const LPHome: React.FC = () => {
         </S.DescriptionWrapper>
 
         <S.ButtonWrapper>
-          <Button size="large" className="poppins-xbold class-content">
-            Inscrição
-          </Button>
+          <InscriptionButton />
         </S.ButtonWrapper>
       </Grid>
     </S.Section>
-  )
-}
+  );
+};
 
-export default LPHome
+export default LPHome;

@@ -1,12 +1,16 @@
-import styled from 'styled-components'
-import { Card as GlobalCard } from '@/styles/globalStyles'
+import styled from "styled-components";
+import { Card as GlobalCard } from "@/styles/globalStyles";
 
 export const Section = styled.section`
   width: 100%;
   height: 1041px;
-  background: url('/images/bg_lp_home.png') center center no-repeat;
-  background-size: cover;
-`
+  background: url("/images/bg_lp_home.png") center center no-repeat;
+  background-size: contain;
+  header {
+    grid-column: 2 / 10;
+    grid-row: 2 / 3;
+  }
+`;
 
 export const Card = styled(GlobalCard)`
   grid-column: 2 / 7;
@@ -25,7 +29,7 @@ export const Card = styled(GlobalCard)`
     grid-row: auto;
     margin: 2rem 1rem;
   }
-`
+`;
 
 export const CardContent = styled.div`
   display: flex;
@@ -42,7 +46,7 @@ export const CardContent = styled.div`
     padding: 1rem;
     gap: 8px;
   }
-`
+`;
 
 export const CardHeader = styled.h1`
   color: var(--color-yellow);
@@ -61,7 +65,7 @@ export const CardHeader = styled.h1`
     font-size: 22px;
     padding: 4px 8px;
   }
-`
+`;
 
 export const CardMainText = styled.p`
   font-size: 71px;
@@ -83,7 +87,7 @@ export const CardMainText = styled.p`
     font-size: 36px;
     line-height: 48px;
   }
-`
+`;
 
 export const CardSpan = styled.span`
   font-size: 71px;
@@ -99,7 +103,7 @@ export const CardSpan = styled.span`
     font-size: 36px;
     line-height: 48px;
   }
-`
+`;
 export const DescriptionWrapper = styled.div`
   grid-column: 2 / 8;
   grid-row: 8 / 11;
@@ -118,7 +122,7 @@ export const DescriptionWrapper = styled.div`
     grid-row: auto;
     margin: 2rem 1rem;
   }
-`
+`;
 export const Description = styled.p`
   font-size: 35px;
   line-height: 49px;
@@ -136,7 +140,7 @@ export const Description = styled.p`
     font-size: 20px;
     line-height: 30px;
   }
-`
+`;
 
 export const ButtonWrapper = styled.div`
   grid-column: 2 / 4;
@@ -159,4 +163,4 @@ export const ButtonWrapper = styled.div`
     justify-content: center;
     margin: 2rem 0;
   }
-`
+`;
