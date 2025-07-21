@@ -46,9 +46,16 @@ export const SubtitleSpan = styled.span`
   max-width: 1600px;
 `
 
+// Novo container apenas para alinhar o Card à esquerda
+export const CardWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5rem;
+  padding-left: 8.39%;
+`
+
 export const PositionedCard = styled.div`
-  width: 58%;
-  height: 58%;
   display: flex;
   align-items: center;
   justify-content: center;

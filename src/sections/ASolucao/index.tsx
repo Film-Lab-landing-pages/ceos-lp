@@ -26,23 +26,25 @@ const ASolucao = () => {
           </S.SubtitleSpan>
         </S.SubtitleWrapper>
 
-        <S.PositionedCard as={Card}>
-          <S.CardContent>
-            {solutions.map((text, index) => (
-              <S.CardItem key={index}>
-                <S.CardItemText>{text}</S.CardItemText>
-                <S.CardItemIcon>
-                  <Image
-                    src="/images/estrela_amarela.svg"
-                    alt="Estrela"
-                    width={93}
-                    height={104}
-                  />
-                </S.CardItemIcon>
-              </S.CardItem>
-            ))}
-          </S.CardContent>
-        </S.PositionedCard>
+        <S.CardWrapper>
+          <S.PositionedCard as={Card}>
+            <S.CardContent>
+              {solutions.map((text, index) => (
+                <S.CardItem key={index}>
+                  <S.CardItemText>{text}</S.CardItemText>
+                  <S.CardItemIcon>
+                    <Image
+                      src="/images/estrela_amarela.svg"
+                      alt="Estrela"
+                      width={93}
+                      height={104}
+                    />
+                  </S.CardItemIcon>
+                </S.CardItem>
+              ))}
+            </S.CardContent>
+          </S.PositionedCard>
+        </S.CardWrapper>
       </S.FlexContainer>
     </S.ASolucaoContainer>
   )
