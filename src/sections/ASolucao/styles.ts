@@ -1,18 +1,12 @@
+import { Section } from '@/styles/globalStyles'
 import styled from 'styled-components'
 
-// 1) Container principal
-export const ASolucaoContainer = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 1079px;
-  background: url('/images/bg_a_solucao.png');
+export const SolucaoSection = styled(Section)`
+  margin: 5rem 0;
+  background: url('/images/bg_section02.png') center center no-repeat;
   background-size: cover;
-  background-position: center;
 `
 
-// 2) Flex container geral
 export const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -20,7 +14,6 @@ export const FlexContainer = styled.div`
   width: 100%;
 `
 
-// 3) Subtitle wrapper
 export const SubtitleWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -46,7 +39,6 @@ export const SubtitleSpan = styled.span`
   max-width: 1600px;
 `
 
-// Novo container apenas para alinhar o Card à esquerda
 export const CardWrapper = styled.div`
   width: 100%;
   display: flex;
@@ -59,10 +51,11 @@ export const PositionedCard = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 10rem;
+  width: 60%;
+  margin-bottom: 5rem;
 `
 
-// 5) Card content
 export const CardContent = styled.div`
   display: flex;
   flex-direction: column;
@@ -73,25 +66,26 @@ export const CardContent = styled.div`
   padding: 2rem;
 `
 
-// 6) CardItem
 export const CardItem = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4.84vw;
   width: 100%;
+  gap: 5rem;
 `
 
 export const CardItemText = styled.p`
   color: var(--color-white);
   font-size: 21px;
   width: 80%;
+  margin-left: 4rem;
 `
 
 export const CardItemIcon = styled.div`
-  width: 100%;
+  width: 20%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 `

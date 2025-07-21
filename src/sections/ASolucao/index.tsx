@@ -12,7 +12,7 @@ const solutions = [
 
 const ASolucao = () => {
   return (
-    <S.ASolucaoContainer>
+    <S.SolucaoSection>
       <S.FlexContainer>
         <Title>A Solução</Title>
 
@@ -46,7 +46,7 @@ const ASolucao = () => {
           </S.PositionedCard>
         </S.CardWrapper>
       </S.FlexContainer>
-    </S.ASolucaoContainer>
+    </S.SolucaoSection>
   )
 }
 
