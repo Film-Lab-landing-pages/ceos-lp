@@ -3,7 +3,9 @@ import { Card, Section } from "@/styles/globalStyles";
 
 export const VistoSection = styled(Section)`
   padding: 5rem 0;
-  background: url("/images/bg_section02.png") center center no-repeat;
+  margin-bottom: 2.5rem;
+  background: url("/images/bg_instagram-mobile.png") center center no-repeat;
+  background-size: cover;
 `;
 
 export const Container = styled.div`
@@ -18,13 +20,13 @@ export const Container = styled.div`
   }
   h3 {
     font-weight: 400;
-    font-size: 1.8em;
+    font-size: 2rem;
     font-style: regular;
   }
   p {
     font-weight: 300;
     font-style: Light;
-    font-size: 1.2em;
+    font-size: 1.4rem;
     line-height: 2.5em;
     opacity: 0.7;
   }

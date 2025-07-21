@@ -14,11 +14,7 @@ export const Title = styled.h2`
   /* line-height: 1; */
 `;
 
-interface ButtonProps {
-  size: "small" | "large";
-}
-
-export const Button = styled.button<ButtonProps>`
+export const Button = styled.button`
   width: 20rem;
 
   color: var(--color-black);
