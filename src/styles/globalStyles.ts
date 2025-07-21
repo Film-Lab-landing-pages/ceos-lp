@@ -19,13 +19,13 @@ interface ButtonProps {
 }
 
 export const Button = styled.button<ButtonProps>`
-  width: 15rem;
-  height: 4rem;
+  width: 20rem;
+
   color: var(--color-black);
   background-color: rgba(255, 200, 2, 0.85);
-  padding: ${(props) => (props.size === "small" ? "8px 16px" : "16px 32px")};
-  font-size: ${(props) => (props.size === "small" ? "1.2rem" : "1.8rem")};
-  font-weight: 700;
+  padding: 1.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 900;
   font-style: bold;
   border: none;
   border-radius: 8px;
@@ -60,7 +60,7 @@ export const Grid = styled.div`
 export const Section = styled.section`
   width: 100%;
   background: url("/images/bg_section02.png") center center no-repeat;
-  background-size: contain;
+  background-size: cover;
 `;
 
 export const Container = styled.div`
