@@ -1,5 +1,8 @@
 import styled from "styled-components";
-import { Card as GlobalCard } from "@/styles/globalStyles";
+import {
+  Card as GlobalCard,
+  Container as GlobalContainer,
+} from "@/styles/globalStyles";
 
 export const Section = styled.section`
   width: 100%;
@@ -8,11 +11,7 @@ export const Section = styled.section`
   padding: 5% 0;
 `;
 
-export const Container = styled.div`
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+export const Container = styled(GlobalContainer)`
   align-items: left;
 `;
 

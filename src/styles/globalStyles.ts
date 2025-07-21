@@ -62,3 +62,10 @@ export const Section = styled.section`
   background: url("/images/bg_section02.png") center center no-repeat;
   background-size: contain;
 `;
+
+export const Container = styled.div`
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+`;

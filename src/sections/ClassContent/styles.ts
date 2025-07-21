@@ -1,19 +1,26 @@
 import { Section } from "@/styles/globalStyles";
 import styled from "styled-components";
+import { Container as GlobalContainer } from "@/styles/globalStyles";
 
 interface ButtonProps {
   size: "small" | "large";
 }
 
 export const ClassSection = styled(Section)`
-  height: 828px;
+  margin: 5rem 0;
   background: url("/images/bg_section02.png") center center no-repeat;
 `;
 
-export const Header = styled.div`
-  grid-column: 2 / 12;
-  grid-row: 2 / 4;
-  padding: 1rem;
+export const Container = styled(GlobalContainer)`
+  width: 80%;
+  button {
+    margin: 0 auto;
+  }
+`;
+
+export const Flex = styled.div`
+  display: flex;
+  margin-bottom: 2.5rem;
 `;
 
 export const Subtitle = styled.p`
@@ -23,9 +30,10 @@ export const Subtitle = styled.p`
 `;
 
 export const LeftContainer = styled.div`
-  grid-column: 2 / 5;
-  grid-row: 4 / 12;
+  width: 30%;
   padding: 1rem;
+  padding-left: 0;
+
   div {
     padding: 16px;
   }
@@ -44,27 +52,20 @@ export const LeftContainer = styled.div`
 `;
 
 export const CenterContainer = styled.div`
-  grid-column: 5 / 9;
-  grid-row: 4 / 12;
   padding: 1rem;
+  width: 40%;
 
   img {
     width: 100%;
-    margin-bottom: 1.5rem;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  }
-  button {
-    grid-column: 1 / 13;
-    grid-row: 12;
-    justify-self: center;
   }
 `;
 
 export const RightContainer = styled.div`
-  grid-column: 9 / 12;
-  grid-row: 6 / 12;
+  width: 30%;
   padding: 1rem;
+  align-self: flex-end;
 
   div {
     padding: 16px;
