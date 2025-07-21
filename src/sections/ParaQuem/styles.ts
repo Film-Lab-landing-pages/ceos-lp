@@ -23,9 +23,10 @@ export const ParaQuemContainer = styled.section`
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
-    gap: 7.5%;
+    gap: 10%;
   }
   .grid-item {
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,7 +62,7 @@ export const ParaQuemContainer = styled.section`
     margin-top: 2rem;
   }
   button {
-    margin-top: 3rem;
+    margin-top: 2rem;
     justify-self: center;
   }
 `;
