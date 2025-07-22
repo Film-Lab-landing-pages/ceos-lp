@@ -1,35 +1,50 @@
-import { Section } from '@/styles/globalStyles'
-import styled from 'styled-components'
-import { Container as GlobalContainer } from '@/styles/globalStyles'
+import { Section } from "@/styles/globalStyles";
+import styled from "styled-components";
+import { Container as GlobalContainer } from "@/styles/globalStyles";
 
 interface ButtonProps {
-  size: 'small' | 'large'
+  size: "small" | "large";
 }
 
 export const ClassSection = styled(Section)`
   margin: 5rem 0;
-  background: url('/images/bg_section02.png') center center no-repeat;
+  background: url("/images/bg_section02.png") center center no-repeat;
   background-size: cover;
-`
+  h2 {
+    margin: 0 auto;
+  }
+  @media (max-width: 768px) {
+    margin: 4rem 0;
+  }
+`;
 
 export const Container = styled(GlobalContainer)`
   width: 80%;
   button {
     margin: 0 auto;
   }
-`
+`;
 
 export const Flex = styled.div`
   display: flex;
   margin-top: 5rem;
   margin-bottom: 2.5rem;
-`
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+`;
 
 export const Subtitle = styled.p`
   color: #ccc;
-  font-size: 27px;
+  font-size: 2rem;
   line-height: 1;
-`
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+    margin: 0 auto;
+  }
+`;
 
 export const LeftContainer = styled.div`
   width: 30%;
@@ -51,7 +66,22 @@ export const LeftContainer = styled.div`
     color: rgba(255, 255, 255, 0.7);
     line-height: 30px;
   }
-`
+  @media (max-width: 768px) {
+    width: 80%;
+    align-self: center;
+    text-align: center;
+    h3 {
+      font-size: 1.8rem;
+      width: 70%;
+      margin: 0 auto 2rem;
+      line-height: 2.1rem;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+  }
+`;
 
 export const CenterContainer = styled.div`
   padding: 1rem;
@@ -62,7 +92,11 @@ export const CenterContainer = styled.div`
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   }
-`
+  @media (max-width: 768px) {
+    width: 80%;
+    align-self: center;
+  }
+`;
 
 export const RightContainer = styled.div`
   width: 30%;
@@ -78,7 +112,11 @@ export const RightContainer = styled.div`
     font-family: var(--font-poppins);
     width: 100%;
   }
-`
+  @media (max-width: 768px) {
+    width: 80%;
+    align-self: center;
+  }
+`;
 
 export const RightList = styled.ul`
   list-style: decimal-leading-zero;
@@ -99,4 +137,4 @@ export const RightList = styled.ul`
 
     font-weight: 300;
   }
-`
+`;

@@ -11,7 +11,7 @@ import {
   Container,
   Flex,
 } from "./styles";
-import { Title, Grid, Card } from "@/styles/globalStyles";
+import { Title, Card } from "@/styles/globalStyles";
 import InscriptionButton from "@/components/InscriptionButton";
 
 export default function SectionClassContent() {

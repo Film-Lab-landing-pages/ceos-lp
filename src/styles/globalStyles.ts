@@ -12,6 +12,9 @@ export const Title = styled.h2`
   font-size: 5rem;
   font-weight: bold;
   /* line-height: 1; */
+  @media (max-width: 480px) {
+    font-size: 3rem;
+  }
 `;
 
 export const Button = styled.button`
@@ -31,6 +34,9 @@ export const Button = styled.button`
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s;
+  @media (max-width: 480px) {
+    width: 14rem;
+  }
 `;
 
 export const Card = styled.div`
