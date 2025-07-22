@@ -8,6 +8,10 @@ export const ParaQuemContainer = styled.section`
   flex-direction: column;
   width: 80%;
 
+  .alignedTitle {
+    text-align: center;
+  }
+
   .explanation {
     text-align: center;
     padding: 2rem;
@@ -26,6 +30,7 @@ export const ParaQuemContainer = styled.section`
     justify-content: space-between;
     gap: 10%;
   }
+
   .grid-item {
     width: 25%;
     display: flex;
@@ -38,10 +43,18 @@ export const ParaQuemContainer = styled.section`
     h3 {
       font-weight: 400;
       font-size: 2rem;
-      width: 50%;
+      width: 70%;
       margin-top: 2rem;
       margin-bottom: 0;
     }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
     p {
       color: #ffffffb2;
       width: 65%;
@@ -93,11 +106,11 @@ export const ParaQuemContainer = styled.section`
       }
 
       .grid-item {
-        width: 80%;
+        width: 70%;
         flex-direction: row;
         align-items: center;
-        text-align: left;
-        padding: 0 2rem;
+        text-align: center;
+        padding: 2rem;
 
         h3 {
           font-size: 1.5rem;
@@ -113,9 +126,72 @@ export const ParaQuemContainer = styled.section`
 
       .placeholder {
         width: 9rem;
-        height: 9rem;
+        height: auto;
         margin: 1rem;
       }
     }
+
+    ${css`
+      @media (max-width: 480px) {
+        h2 {
+          font-size: 3rem;
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+
+        .explanation {
+          font-size: 1.5rem;
+          padding: 1.5rem;
+          width: 100%;
+
+          span {
+            font-size: 1.5rem;
+          }
+        }
+
+        .grid {
+          flex-direction: column;
+          align-items: center;
+          gap: 2rem;
+        }
+
+        .grid-item {
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: 1.5rem;
+
+          h3 {
+            font-size: 1.3rem;
+            width: 100%;
+            margin-top: 1rem;
+          }
+
+          .content {
+            align-items: center;
+            text-align: center;
+          }
+
+          p {
+            font-size: 1.3rem;
+            width: 100%;
+          }
+        }
+
+        .placeholder {
+          width: 100%;
+          padding: 1rem;
+          margin-top: 1rem;
+        }
+
+        button {
+          width: 100%;
+          max-width: 14.5rem;
+          align-self: center;
+          margin-top: 2rem;
+        }
+      }
+    `}
   `}
 `
