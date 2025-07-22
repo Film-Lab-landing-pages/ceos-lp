@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled from 'styled-components'
+import { css } from 'styled-components'
 
 export const ParaQuemContainer = styled.section`
   margin: 0 auto 5.5rem;
@@ -65,4 +66,61 @@ export const ParaQuemContainer = styled.section`
     margin-top: 2rem;
     justify-self: center;
   }
-`;
+
+  ${css`
+    @media (max-width: 1024px) {
+      h2 {
+        font-size: 4.7rem;
+        margin-bottom: 3rem;
+      }
+
+      .explanation {
+        font-size: 2rem;
+        width: 56rem;
+        margin-bottom: 3rem;
+
+        span {
+          font-size: 2rem;
+        }
+      }
+
+      .grid {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 3rem;
+        margin-bottom: 6rem;
+      }
+
+      .grid-item {
+        width: 45rem;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        padding: 0 2rem;
+
+        h3 {
+          font-size: 1.5rem;
+          width: 100%;
+          margin-top: 0;
+        }
+
+        p {
+          font-size: 1.5rem;
+          width: 100%;
+        }
+      }
+
+      .placeholder {
+        width: 9rem;
+        height: 9rem;
+        margin: 1rem;
+      }
+
+      button {
+        align-self: center;
+        width: 14.5rem;
+      }
+    }
+  `}
+`
