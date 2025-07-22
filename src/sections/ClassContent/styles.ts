@@ -73,7 +73,7 @@ export const LeftContainer = styled.div`
     h3 {
       font-size: 1.8rem;
       width: 70%;
-      margin: 0 auto 2rem;
+      margin: 0 auto 1.2rem;
       line-height: 2.1rem;
     }
     p {
@@ -93,7 +93,8 @@ export const CenterContainer = styled.div`
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   }
   @media (max-width: 768px) {
-    width: 80%;
+    width: 100%;
+    padding: 0;
     align-self: center;
   }
 `;
@@ -115,6 +116,12 @@ export const RightContainer = styled.div`
   @media (max-width: 768px) {
     width: 80%;
     align-self: center;
+    h3 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 0 auto 1rem;
+      line-height: 2.1rem;
+    }
   }
 `;
 
@@ -126,8 +133,7 @@ export const RightList = styled.ul`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  div {
-  }
+
   li {
     margin-left: 16px;
     font-size: 1.5rem;
@@ -136,5 +142,13 @@ export const RightList = styled.ul`
     line-height: 30px;
 
     font-weight: 300;
+  }
+  @media (max-width: 480px) {
+    padding-left: 1rem;
+    li {
+      margin: 0 2 0 0rem;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
   }
 `;

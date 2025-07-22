@@ -118,7 +118,7 @@ export const Description = styled.p`
   line-height: 49px;
   color: rgba(255, 255, 255, 0.7);
   padding: 0 1rem;
-  margin: 5rem 0 5rem;
+  margin: 0 0 5rem;
   text-align: left;
   align-self: start;
   border-left: 2px solid var(--color-white);
@@ -133,6 +133,7 @@ export const Description = styled.p`
   @media (max-width: 480px) {
     font-size: 1.2rem;
     line-height: 1.8rem;
+    margin: 0 0 2rem;
   }
 `;
 
@@ -214,5 +215,15 @@ export const HeaderContainer = styled(Card).attrs({ as: "header" })`
       width: 50%;
       justify-self: center;
     }
+  }
+`;
+
+export const ImageContainer = styled.div`
+  max-width: 80%;
+  margin: 4rem auto;
+
+  img {
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   }
 `;

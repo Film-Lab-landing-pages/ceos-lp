@@ -34,6 +34,14 @@ const LPHome: React.FC = () => {
           </S.CardContent>
         </S.Card>
 
+        <S.ImageContainer>
+          <img
+            className="hide-on-desktop"
+            src="./images/foto-ceos.png"
+            alt="Foto de CEOs"
+          />
+        </S.ImageContainer>
+
         <S.Description>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
           porttitor est ac risus ullamcorper eleifend. Proin in nibh molestie
