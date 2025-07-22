@@ -93,7 +93,7 @@ export const ParaQuemContainer = styled.section`
       }
 
       .grid-item {
-        width: 45rem;
+        width: 80%;
         flex-direction: row;
         align-items: center;
         text-align: left;
@@ -115,11 +115,6 @@ export const ParaQuemContainer = styled.section`
         width: 9rem;
         height: 9rem;
         margin: 1rem;
-      }
-
-      button {
-        align-self: center;
-        width: 14.5rem;
       }
     }
   `}
