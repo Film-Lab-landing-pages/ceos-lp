@@ -85,6 +85,8 @@ export const CardHeader = styled.li`
   margin: 2rem;
 `
 export const PacotesCard = styled(Card)`
+  display: flex;
+  flex-direction: column;
   height: 30rem;
 `
 
@@ -93,7 +95,7 @@ export const CardItem = styled.li`
   padding: 0.3rem;
   color: var(--color-white);
   font-size: 1.5rem;
-  margin: 2rem;
+  /* margin: 2rem; */
 
   span.check {
     color: green;
@@ -111,10 +113,11 @@ export const CardItemInativo = styled(CardItem)`
 `
 
 export const Selo = styled.div`
-  margin-top: 3rem;
+  margin-top: auto;
   color: #ffc802;
   padding: 0.4rem 1rem;
   border-radius: 6px;
   text-align: center;
   font-size: 3rem;
+  margin-bottom: 1rem;
 `

@@ -23,7 +23,7 @@ const Pacotes = () => {
           <S.Pacote>
             <S.Icon src="/images/terra.png" alt="Ícone Terra" />
             <S.PacoteTitle className="poppins-bold">TERRA</S.PacoteTitle>
-            <Card>
+            <S.PacotesCard>
               <S.CardHeader className="poppins-bold">Inclui:</S.CardHeader>
 
               <S.CardItem className="poppins-regular">
@@ -42,7 +42,7 @@ const Pacotes = () => {
               <S.CardItemInativo className="poppins-regular">
                 <span className="cross">✘</span>Gestão de redes sociais
               </S.CardItemInativo>
-            </Card>
+            </S.PacotesCard>
           </S.Pacote>
 
           <S.Pacote>
@@ -78,7 +78,7 @@ const Pacotes = () => {
           <S.Pacote className="recomendado">
             <S.Icon src="/images/jupiter.png" alt="Ícone Júpiter" />
             <S.PacoteTitle className="poppins-bold">JÚPITER</S.PacoteTitle>
-            <Card>
+            <S.PacotesCard>
               <S.CardHeader className="poppins-bold">Inclui:</S.CardHeader>
 
               <S.CardItem className="poppins-regular">
@@ -98,7 +98,7 @@ const Pacotes = () => {
                 gravação, direção e edição
               </S.CardItem>
               <S.Selo className="poppins-bold">RECOMENDADO!</S.Selo>
-            </Card>
+            </S.PacotesCard>
           </S.Pacote>
         </S.PacotesGrid>
       </S.FlexContainer>
