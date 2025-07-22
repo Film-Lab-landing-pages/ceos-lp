@@ -15,7 +15,8 @@ const Footer: React.FC = () => {
           height={50}
         />
         <p className="copyright">
-          © Copyright 2025 FilmeLab. Todos os direitos reservados.
+          © Copyright 2025 FilmeLab. <br className="hide-on-desktop" /> Todos os
+          direitos reservados.
         </p>
       </div>
       <p className="filmelab-website">www.filmelab.com.br</p>

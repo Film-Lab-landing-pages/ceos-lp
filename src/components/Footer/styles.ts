@@ -11,6 +11,9 @@ export const FooterContainer = styled.footer`
   justify-content: space-between;
   align-items: center;
 
+  .hide-on-desktop {
+    display: none;
+  }
   .logo-and-copyright {
     display: flex;
     align-items: center;
@@ -28,5 +31,34 @@ export const FooterContainer = styled.footer`
 
   .filmelab-website {
     font-size: 24px;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px 20px;
+
+    .logo-and-copyright {
+      margin-top: 1.5rem;
+      width: 50%;
+      flex-direction: column;
+      margin-bottom: 16px;
+      .copyright {
+        font-size: 1rem;
+        line-height: 1.8rem;
+      }
+    }
+
+    img {
+      width: 120px;
+    }
+
+    .filmelab-website {
+      font-size: 1.5rem;
+    }
+    .hide-on-desktop {
+      display: block;
+    }
   }
 `;
