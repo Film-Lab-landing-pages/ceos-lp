@@ -4,7 +4,6 @@ import { Button, Section } from "@/styles/globalStyles";
 export const SairDessaSection = styled(Section)`
   background-image: url("/images/bg_stocks-up.png");
   background-size: cover;
-  padding: 5rem;
   h2 {
     margin: 0 auto 5.5rem;
     font-size: 4.75rem;
@@ -38,6 +37,10 @@ export const SairDessaSection = styled(Section)`
     font-weight: 700;
     font-size: 1.7rem;
   }
+  .hide-on-desktop {
+    display: none;
+  }
+
   @media (max-width: 1024px) {
     .flex-card {
       flex-direction: column;
@@ -46,6 +49,40 @@ export const SairDessaSection = styled(Section)`
     }
     h2 {
       margin: 0 auto 4rem;
+    }
+  }
+  @media (max-width: 768px) {
+    background-image: none;
+    .hide-on-desktop {
+      display: block;
+    }
+    .arrow {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    .container {
+      width: 80%;
+    }
+    h2 {
+      font-size: 3rem;
+      margin: 0 auto 3rem;
+    }
+    .flex-card {
+      padding: 2rem;
+      gap: 2rem;
+    }
+    .flex-item {
+      font-size: 1.2rem;
+      padding: 1rem;
+      border-radius: 8px;
+      img {
+        display: none;
+      }
     }
   }
 `;

@@ -53,6 +53,9 @@ export const Card = styled.div`
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px); //60px no do Diego
   -webkit-backdrop-filter: blur(10px);
+  @media (max-width: 480px) {
+    border-radius: 8px;
+  }
 `;
 
 export const Grid = styled.div`

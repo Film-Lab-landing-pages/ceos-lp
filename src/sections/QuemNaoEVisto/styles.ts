@@ -30,6 +30,18 @@ export const Container = styled.div`
     line-height: 2.5em;
     opacity: 0.7;
   }
+
+  @media (max-width: 480px) {
+    gap: 2rem;
+    h2 {
+      font-size: 3rem;
+      margin: 0 auto;
+      text-align: center;
+    }
+    h3 {
+      margin-bottom: 2rem;
+    }
+  }
 `;
 
 export const VistoCard = styled(Card)`
@@ -40,5 +52,18 @@ export const VistoCard = styled(Card)`
   padding: 2rem 7%;
   img {
     height: 70px;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem 5%;
+
+    flex-direction: column;
+    text-align: center;
+
+    img {
+      height: 4em;
+    }
   }
 `;
