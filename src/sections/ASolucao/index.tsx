@@ -1,14 +1,14 @@
-"use client";
+'use client'
 
-import Image from "next/image";
-import { Card, Title } from "@/styles/globalStyles";
-import * as S from "./styles";
+import Image from 'next/image'
+import { Card, Title } from '@/styles/globalStyles'
+import * as S from './styles'
 
 const solutions = [
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tellus id massa pretium semper aliquet ac.",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tellus id massa pretium semper aliquet ac.",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tellus id massa pretium semper aliquet ac.",
-];
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tellus id massa pretium semper aliquet ac.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tellus id massa pretium semper aliquet ac.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tellus id massa pretium semper aliquet ac.',
+]
 
 const ASolucao = () => {
   return (
@@ -31,6 +31,7 @@ const ASolucao = () => {
             <S.CardContent>
               {solutions.map((text, index) => (
                 <S.CardItem key={index}>
+                  {/* Mantemos a ordem Texto -> Ícone para desktop */}
                   <S.CardItemText>{text}</S.CardItemText>
                   <S.CardItemIcon>
                     <Image
@@ -39,6 +40,7 @@ const ASolucao = () => {
                       width={93}
                       height={104}
                     />
+                    <span className="mobile-number">{index + 1}</span>
                   </S.CardItemIcon>
                 </S.CardItem>
               ))}
@@ -47,7 +49,7 @@ const ASolucao = () => {
         </S.CardWrapper>
       </S.FlexContainer>
     </S.SolucaoSection>
-  );
-};
+  )
+}
 
-export default ASolucao;
+export default ASolucao
