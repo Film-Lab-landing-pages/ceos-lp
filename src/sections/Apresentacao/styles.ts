@@ -47,7 +47,7 @@ export const ApresentacaoContainerWrapper = styled(Container)`
   }
 
   @media (max-width: 480px) {
-    width: 90%;
+    width: 85%;
   }
 `
 
@@ -76,12 +76,12 @@ export const ApresentacaoText = styled.p`
   line-height: 1.5;
 
   @media (max-width: 1024px) {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     text-align: center;
   }
 
   @media (max-width: 480px) {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     padding: 0 1rem;
     text-align: center;
   }
