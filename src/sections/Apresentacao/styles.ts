@@ -84,5 +84,6 @@ export const ApresentacaoText = styled.p`
     font-size: 1.6rem;
     padding: 0 1rem;
     text-align: center;
+    line-height: 3rem;
   }
 `
