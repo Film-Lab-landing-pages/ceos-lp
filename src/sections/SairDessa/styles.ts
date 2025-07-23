@@ -6,24 +6,37 @@ export const SairDessaSection = styled(Section)`
   background-size: cover;
   padding: 5rem;
   h2 {
-    margin: 0 auto 7rem;
+    margin: 0 auto 5.5rem;
     font-size: 4.75rem;
     text-align: center;
   }
   .flex-card {
     display: flex;
+    flex-direction: column;
     width: 100%;
     margin: 0 auto;
     padding: 4rem 6rem;
-    gap: 8%;
+    gap: 4rem;
+  }
+  .flex-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+    font-size: 1.5rem;
+    color: var(--color-white);
+    border: 1px solid var(--color-yellow);
+    border-radius: 16px;
+    padding: 1rem 2rem;
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
   }
   p {
-    border: 1px solid var(--color-yellow);
-    border-radius: 8px;
-    padding: 4rem 2.5rem;
-    font-size: 1.25rem;
-    line-height: 2.5em;
-    text-align: center;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.7rem;
   }
   @media (max-width: 1024px) {
     .flex-card {
