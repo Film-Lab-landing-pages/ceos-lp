@@ -78,11 +78,11 @@ export const PositionedCard = styled.div`
   margin-bottom: 5rem;
 
   @media (max-width: 1024px) {
-    width: 80% !important;
+    width: 90% !important;
   }
 
   @media (max-width: 480px) {
-    width: 95% !important;
+    width: 85% !important;
     margin-bottom: 3rem;
   }
 `
@@ -106,11 +106,11 @@ export const CardItem = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4.84vw;
-  width: 100%;
   gap: 5rem;
+  width: 100%;
 
   @media (max-width: 480px) {
+    display: flex;
     flex-direction: column;
     gap: 1rem;
   }
@@ -123,7 +123,8 @@ export const CardItemText = styled.p`
   margin-left: 4rem;
 
   @media (max-width: 480px) {
-    font-size: 1rem;
+    order: 2;
+    font-size: 1.2rem;
     width: 100%;
     margin-left: 0;
     text-align: center;
@@ -136,6 +137,10 @@ export const CardItemIcon = styled.div`
   display: flex;
   justify-content: flex-start;
 
+  .mobile-number {
+    display: none;
+  }
+
   @media (max-width: 1024px) {
     width: auto;
     justify-content: center;
@@ -144,5 +149,19 @@ export const CardItemIcon = styled.div`
   @media (max-width: 480px) {
     width: 100%;
     justify-content: center;
+    order: 1;
+
+    img,
+    [data-nimg] {
+      display: none !important;
+    }
+
+    .mobile-number {
+      display: block;
+      font-size: 4.5rem;
+      color: #ffc802;
+      font-weight: bold;
+      text-align: center;
+    }
   }
 `

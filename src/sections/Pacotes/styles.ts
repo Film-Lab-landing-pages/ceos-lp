@@ -108,7 +108,7 @@ export const Pacote = styled.div`
   }
 
   @media (max-width: 480px) {
-    width: 100%;
+    width: 85%;
     padding: 1rem;
     margin: 1.5rem 0;
   }
@@ -124,8 +124,8 @@ export const Icon = styled.img`
   }
 
   @media (max-width: 480px) {
-    width: 8rem;
-    height: 8rem;
+    width: 6.2rem;
+    height: 6.2rem;
   }
 `
 
@@ -139,7 +139,7 @@ export const PacoteTitle = styled.h3`
   }
 
   @media (max-width: 480px) {
-    font-size: 2.2rem;
+    font-size: 3.2rem;
     text-align: center;
   }
 `
@@ -156,7 +156,7 @@ export const CardHeader = styled.li`
   }
 
   @media (max-width: 480px) {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-align: center;
   }
 `
@@ -196,6 +196,7 @@ export const CardItem = styled.li`
   @media (max-width: 480px) {
     font-size: 1.3rem;
     text-align: left;
+    font-weight: 400;
   }
 `
 
@@ -222,7 +223,7 @@ export const Selo = styled.div`
   }
 
   @media (max-width: 480px) {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     padding: 0.3rem 0.8rem;
   }
 `
