@@ -14,6 +14,10 @@ export const ClassSection = styled(Section)`
       text-align: center;
     }
   }
+  @media (max-width: 480px) {
+    background: url("/images/bg-2-mobile.png") center center no-repeat;
+    background-size: cover;
+  }
 `;
 
 export const Container = styled(GlobalContainer)`
