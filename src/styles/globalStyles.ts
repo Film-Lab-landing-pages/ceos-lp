@@ -28,7 +28,7 @@ export const Button = styled.button`
   font-style: bold;
   border: none;
   border-radius: 8px;
-  box-shadow: 0 0 8px 4px rgba(255, 200, 2, 0.5);
+  box-shadow: 0 0 4px 2px rgba(255, 200, 2, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,6 +37,11 @@ export const Button = styled.button`
 
   @media (max-width: 480px) {
     width: 14rem;
+  }
+
+  &:hover {
+    background-color: rgba(255, 200, 2, 0.95);
+    box-shadow: 0 0 8px 4px rgba(255, 200, 2, 0.7);
   }
 `;
 

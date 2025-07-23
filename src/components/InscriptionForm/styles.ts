@@ -43,11 +43,21 @@ export const InscriptionContainer = styled.div`
     input {
       padding: 0 1rem;
       font-size: 1.2rem;
+      &:hover {
+        border: 2px solid rgba(0, 0, 0, 0.2);
+      }
+      &:focus-visible {
+        border: 2px solid rgba(0, 0, 0, 0.3);
+        outline: none;
+      }
     }
     button {
       background-color: var(--color-yellow);
       font-weight: 900;
       font-size: 1.6rem;
+      &:hover {
+        filter: brightness(1.06);
+      }
     }
   }
   .overlay {
@@ -57,6 +67,6 @@ export const InscriptionContainer = styled.div`
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 50;
+    z-index: 70;
   }
 `;
