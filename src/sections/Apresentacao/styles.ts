@@ -10,6 +10,8 @@ export const ApresentacaoSection = styled(Section)`
   }
 
   @media (max-width: 480px) {
+    background: url('/images/bg_apresentacao_mobile.png') center center
+      no-repeat;
     .hide-on-desktop {
       display: block;
     }

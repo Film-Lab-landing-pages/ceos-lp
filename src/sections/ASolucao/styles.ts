@@ -3,8 +3,14 @@ import styled from 'styled-components'
 
 export const SolucaoSection = styled(Section)`
   margin: 5rem 0;
-  background: url('/images/bg_section02.png') center center no-repeat;
+  background: url('/images/bg_a_solucao.png') center center no-repeat;
   background-size: cover;
+
+  @media (max-width: 480px) {
+    background: url('/images/bg_a_solucao_mobile.png');
+    min-height: 150vh;
+    margin: 0;
+  }
 `
 
 export const FlexContainer = styled(Container)`
@@ -18,7 +24,7 @@ export const SubtitleWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 7rem;
+  margin-bottom: 7.5rem;
 
   @media (max-width: 480px) {
     margin-bottom: 3rem;
@@ -27,7 +33,7 @@ export const SubtitleWrapper = styled.div`
 
 export const SubtitleMainText = styled.p`
   color: var(--color-white);
-  font-size: 25px;
+  font-size: 1.5rem;
   text-align: center;
   margin-bottom: 1rem;
   max-width: 1600px;
@@ -46,13 +52,14 @@ export const SubtitleSpan = styled.span`
   color: var(--color-yellow);
   font-weight: bold;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.5rem;
   text-align: center;
   max-width: 1600px;
 
   @media (max-width: 1024px) {
     font-size: 2rem;
     padding: 0 1rem;
+    margin-bottom: 7.5rem;
   }
 
   @media (max-width: 480px) {
@@ -67,6 +74,9 @@ export const CardWrapper = styled.div`
 
   @media (max-width: 1024px) {
     justify-content: center !important;
+  }
+  @media (max-width: 480px) {
+    margim-bottom: 20rem;
   }
 `
 
@@ -97,7 +107,7 @@ export const CardContent = styled.div`
   padding: 2rem;
 
   @media (max-width: 480px) {
-    padding: 1rem;
+    padding: 2rem;
     gap: 1.5rem;
   }
 `
