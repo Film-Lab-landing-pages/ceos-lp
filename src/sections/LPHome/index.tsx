@@ -2,24 +2,24 @@
 
 import React from "react";
 import * as S from "./styles";
-import { Button, Title } from "@/styles/globalStyles";
+import { Button, HeaderContainer, Title } from "@/styles/globalStyles";
 import InscriptionButton from "@/components/InscriptionButton";
 const LPHome: React.FC = () => {
   return (
     <S.Section>
-      <S.HeaderContainer>
+      <HeaderContainer>
         <nav className="hide-on-mobile">
           <img src="./images/logo_film-branco.png" alt="logo Filme Lab" />
           <a href="#">Home</a>
-          <a href="#">Conteúdo Da Aula</a>
-          <a href="#">Para Quem É Essa Aula</a>
+          <a href="#class-content">Conteúdo Da Aula</a>
+          <a href="#para-quem">Para Quem É Essa Aula</a>
         </nav>
         <img
           className="hide-on-desktop"
           src="./images/logo_film-branco.png"
           alt="logo Filme Lab"
         />
-      </S.HeaderContainer>
+      </HeaderContainer>
       <S.Container>
         <S.Card>
           <S.CardHeader className="poppins-bold">

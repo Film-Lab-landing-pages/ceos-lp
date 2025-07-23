@@ -72,3 +72,61 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
+export const HeaderContainer = styled(Card).attrs({ as: "header" })`
+  width: 50%;
+  height: 70px;
+  margin: 0 auto 5rem;
+  border-radius: 8px;
+  padding: 0 2rem;
+
+  nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    img {
+      width: 135px;
+    }
+    a {
+      font-size: 1.5rem;
+      opacity: 0.5;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    width: 80%;
+    height: 60px;
+    padding: 0 1rem;
+
+    nav {
+      gap: 1rem;
+      a {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    width: 50%;
+    height: auto;
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: none;
+    box-shadow: none;
+    border: none;
+
+    nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    img {
+      width: 50%;
+      justify-self: center;
+    }
+  }
+`;

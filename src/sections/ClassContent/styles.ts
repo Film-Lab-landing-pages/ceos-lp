@@ -2,19 +2,17 @@ import { Section } from "@/styles/globalStyles";
 import styled from "styled-components";
 import { Container as GlobalContainer } from "@/styles/globalStyles";
 
-interface ButtonProps {
-  size: "small" | "large";
-}
-
 export const ClassSection = styled(Section)`
   margin: 5rem 0;
   background: url("/images/bg_section02.png") center center no-repeat;
   background-size: cover;
-  h2 {
-    margin: 0 auto;
-  }
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     margin: 4rem 0;
+    h2,
+    h4 {
+      margin: 0 auto;
+      text-align: center;
+    }
   }
 `;
 
@@ -29,14 +27,14 @@ export const Flex = styled.div`
   display: flex;
   margin-top: 5rem;
   margin-bottom: 2.5rem;
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
     margin-top: 1rem;
     justify-content: center;
   }
 `;
 
-export const Subtitle = styled.p`
+export const Subtitle = styled.h4`
   color: #ccc;
   font-size: 2rem;
   line-height: 1;
@@ -66,10 +64,17 @@ export const LeftContainer = styled.div`
     color: rgba(255, 255, 255, 0.7);
     line-height: 30px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     width: 80%;
     align-self: center;
     text-align: center;
+    h3 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
     h3 {
       font-size: 1.8rem;
       width: 70%;
@@ -87,13 +92,24 @@ export const CenterContainer = styled.div`
   padding: 1rem;
   width: 40%;
 
+  @media (max-width: 1024px) {
+    width: 100%;
+    align-self: center;
+    text-align: center;
+  }
   img {
     width: 100%;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    @media (max-width: 1024px) {
+      max-width: 360px;
+      margin: 0 auto;
+    }
   }
+
   @media (max-width: 768px) {
     width: 100%;
+
     padding: 0;
     align-self: center;
   }
@@ -113,6 +129,12 @@ export const RightContainer = styled.div`
     font-family: var(--font-poppins);
     width: 100%;
   }
+  @media (max-width: 1024px) {
+    width: 80%;
+    align-self: center;
+    text-align: center;
+  }
+
   @media (max-width: 768px) {
     width: 80%;
     align-self: center;

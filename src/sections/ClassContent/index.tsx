@@ -16,7 +16,7 @@ import InscriptionButton from "@/components/InscriptionButton";
 
 export default function SectionClassContent() {
   return (
-    <ClassSection>
+    <ClassSection id="class-content">
       <Container>
         <Title className="poppins-bold">Conteúdo Da Aula</Title>
         <Subtitle className="poppins-light">

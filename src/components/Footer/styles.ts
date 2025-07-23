@@ -32,13 +32,37 @@ export const FooterContainer = styled.footer`
   .filmelab-website {
     font-size: 24px;
   }
+  @media (max-width: 1024px) {
+    padding: 16px 20px;
 
-  @media (max-width: 480px) {
+    .copyright {
+      font-size: 1.2rem;
+      line-height: 2.5rem;
+    }
+
+    img {
+      width: 160px;
+    }
+
+    .filmelab-website {
+      font-size: 1.5rem;
+    }
+  }
+  @media (max-width: 768px) {
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 16px 20px;
 
+    .logo-and-copyright {
+      margin-top: 1.5rem;
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  @media (max-width: 480px) {
     .logo-and-copyright {
       margin-top: 1.5rem;
       width: 50%;

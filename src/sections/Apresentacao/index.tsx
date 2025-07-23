@@ -1,11 +1,24 @@
-'use client'
+"use client";
 
-import { Title, Container } from '@/styles/globalStyles'
-import * as S from './styles'
+import { Title, Container, HeaderContainer } from "@/styles/globalStyles";
+import * as S from "./styles";
 
 const Apresentacao = () => {
   return (
     <S.ApresentacaoSection>
+      <HeaderContainer>
+        <nav className="hide-on-mobile">
+          <img src="./images/logo_film-branco.png" alt="logo Filme Lab" />
+          <a href="#">Home</a>
+          <a href="#">Solução</a>
+          <a href="#">Pacotes</a>
+        </nav>
+        <img
+          className="hide-on-desktop"
+          src="./images/logo_film-branco.png"
+          alt="logo Filme Lab"
+        />
+      </HeaderContainer>
       <S.ApresentacaoContainerWrapper>
         <S.ApresentacaoTitle className="poppins-bold">
           MasterClass Para CEOs
@@ -17,7 +30,7 @@ const Apresentacao = () => {
         </S.ApresentacaoText>
       </S.ApresentacaoContainerWrapper>
     </S.ApresentacaoSection>
-  )
-}
+  );
+};
 
-export default Apresentacao
+export default Apresentacao;
