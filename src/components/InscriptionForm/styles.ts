@@ -9,6 +9,7 @@ export const InscriptionContainer = styled.div`
   height: 100%;
   opacity: 0;
   transition: opacity 0.3s;
+  z-index: 500;
 
   &.active {
     opacity: 1;

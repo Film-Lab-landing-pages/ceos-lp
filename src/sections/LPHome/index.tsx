@@ -22,16 +22,14 @@ const LPHome: React.FC = () => {
       </S.HeaderContainer>
       <S.Container>
         <S.Card>
-          <S.CardContent>
-            <S.CardHeader className="poppins-bold">
-              MASTERCLASS PARA CEOs
-            </S.CardHeader>
-            <Title>
-              Quem não é visto,
-              <br />
-              <span>não é lembrado!</span>
-            </Title>
-          </S.CardContent>
+          <S.CardHeader className="poppins-bold">
+            MASTERCLASS PARA CEOs
+          </S.CardHeader>
+          <Title>
+            Quem não é visto,
+            <br />
+            <span>não é lembrado!</span>
+          </Title>
         </S.Card>
 
         <S.ImageContainer>

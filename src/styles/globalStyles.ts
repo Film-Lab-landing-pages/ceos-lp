@@ -34,6 +34,7 @@ export const Button = styled.button`
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s;
+
   @media (max-width: 480px) {
     width: 14rem;
   }

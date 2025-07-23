@@ -30,7 +30,12 @@ export const Container = styled(GlobalContainer)`
 `;
 
 export const Card = styled(GlobalCard)`
-  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 2rem;
+  width: 50%;
   h2 {
     color: var(--color-white);
   }
@@ -38,28 +43,28 @@ export const Card = styled(GlobalCard)`
     color: var(--color-yellow);
   }
 
-  @media (max-width: 768px) {
-    max-width: 90%;
-    align-self: center;
-  }
-`;
+  @media (max-width: 1024px) {
+    width: 70%;
 
-export const CardContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 2rem;
-
-  @media (max-width: 768px) {
-    width: 100%;
     padding: 1.5rem;
   }
-
-  @media (max-width: 480px) {
-    padding: 1rem;
-    gap: 0;
+  @media (max-width: 768px) {
+    align-self: center;
+    text-align: center;
     align-items: center;
+
+    width: 90%;
+    h1 {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+    h2 {
+      font-size: 4rem;
+    }
+  }
+  @media (max-width: 480px) {
+    padding: 3rem;
+    gap: 0;
     h1 {
       font-size: 1.5rem;
       margin-top: 1rem;
@@ -160,7 +165,7 @@ export const ButtonWrapper = styled.div`
   }
 `;
 
-export const HeaderContainer = styled(Card).attrs({ as: "header" })`
+export const HeaderContainer = styled(GlobalCard).attrs({ as: "header" })`
   width: 50%;
   height: 70px;
   margin: 0 auto 5rem;
