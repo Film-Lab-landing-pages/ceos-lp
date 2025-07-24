@@ -1,14 +1,15 @@
-import styled from "styled-components";
-import { Button, Section } from "@/styles/globalStyles";
+import styled from 'styled-components'
+import { Section } from '@/styles/globalStyles'
 
 export const SairDessaSection = styled(Section)`
-  background-image: url("/images/bg_stocks-up.png");
+  background-image: url('/images/bg_stocks-up.png');
   background-size: cover;
   h2 {
     margin: 0 auto 5.5rem;
     font-size: 4.75rem;
     text-align: center;
   }
+
   .flex-card {
     display: flex;
     flex-direction: column;
@@ -85,7 +86,14 @@ export const SairDessaSection = styled(Section)`
       }
     }
   }
-`;
+
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 2.8rem;
+      margin: 0 auto 2rem;
+    }
+  }
+`
 
 export const Subtitle = styled.h3`
   background-color: var(--color-yellow);
@@ -97,4 +105,4 @@ export const Subtitle = styled.h3`
   text-align: center;
 
   margin-bottom: 4rem;
-`;
+`
