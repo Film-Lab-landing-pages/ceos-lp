@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import ASolucao from "@/sections/ASolucao";
 import QuemNaoEVisto from "@/sections/QuemNaoEVisto";
 import SairDessa from "@/sections/SairDessa";
