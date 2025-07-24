@@ -69,4 +69,31 @@ export const InscriptionContainer = styled.div`
     background: rgba(0, 0, 0, 0.5);
     z-index: 70;
   }
+
+  @media (max-width: 768px) {
+    form {
+      width: 90%;
+      height: 75%;
+      padding: 1rem;
+      gap: 2.6rem;
+      input {
+        width: 80%;
+      }
+    }
+  }
+`;
+
+export const CloseButton = styled.div`
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  font-family: "Arial", sans-serif; /* Fonte system para símbolos */
+  font-size: 2rem;
+  line-height: 1rem;
+  color: ${colors.black};
+  opacity: 0.29;
+  &:hover {
+    opacity: 0.5;
+  }
 `;

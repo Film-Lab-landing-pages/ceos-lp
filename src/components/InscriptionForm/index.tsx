@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { InscriptionContainer } from "./styles";
+import { CloseButton, InscriptionContainer } from "./styles";
 import { useInscriptionStore } from "@/store/store";
 
 const InscriptionForm: React.FC = () => {
@@ -14,6 +14,9 @@ const InscriptionForm: React.FC = () => {
           className={isActive ? "active" : ""}
         >
           <form>
+            <CloseButton onClick={hideForm} className="close-button">
+              ×
+            </CloseButton>
             <input type="text" placeholder="Nome" />
             <input type="email" placeholder="Email" />
             <input type="text" placeholder="Celular" />
