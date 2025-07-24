@@ -8,14 +8,14 @@ const Apresentacao = () => {
     <S.ApresentacaoSection>
       <HeaderContainer>
         <nav className="hide-on-mobile">
-          <img src="./images/logo_film-branco.png" alt="logo Filme Lab" />
+          <img src="/images/logo_film-branco.png" alt="logo Filme Lab" />
           <a href="#">Home</a>
           <a href="#">Solução</a>
           <a href="#">Pacotes</a>
         </nav>
         <img
           className="hide-on-desktop"
-          src="./images/logo_film-branco.png"
+          src="/images/logo_film-branco.png"
           alt="logo Filme Lab"
         />
       </HeaderContainer>
