@@ -1,5 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  compiler: {
+    styledComponents: true,
+  },
+};
+
+export default nextConfig;
+
+/** @type {import('next').NextConfig} 
+const nextConfig = {
   output: "export",
   trailingSlash: true,
   images: {
@@ -10,4 +19,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+export default nextConfig;*/
