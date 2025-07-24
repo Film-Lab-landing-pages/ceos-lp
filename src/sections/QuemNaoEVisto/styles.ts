@@ -9,7 +9,7 @@ export const VistoSection = styled(Section)`
   @media (max-width: 480px) {
     background: url('/images/bg_instagram-mobile-mobile.png') center center
       no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
 `
 

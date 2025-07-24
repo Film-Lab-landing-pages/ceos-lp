@@ -13,14 +13,14 @@ const SairDessa: React.FC = () => {
         <Card className="flex-card">
           {questions.map((question, index) => (
             <div key={index} className="flex-item">
-              <img key={index + 50} src="./images/star.png" alt="estrela" />
+              <img key={index + 50} src="/images/star.png" alt="estrela" />
               <p>{question}</p>
             </div>
           ))}
         </Card>
         <img
           className="hide-on-desktop arrow"
-          src="./images/seta.png"
+          src="/images/seta.png"
           alt="seta lucros"
         />
       </Container>

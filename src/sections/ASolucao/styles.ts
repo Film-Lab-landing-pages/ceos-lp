@@ -1,23 +1,31 @@
-import { Container, Section } from '@/styles/globalStyles'
-import styled from 'styled-components'
+import { Container, Section } from "@/styles/globalStyles";
+import styled from "styled-components";
 
 export const SolucaoSection = styled(Section)`
   margin: 5rem 0;
-  background: url('/images/bg_a_solucao.png') center center no-repeat;
+  background: url("/images/bg_a_solucao.png") center center no-repeat;
   background-size: cover;
+  .hide-on-desktop {
+    display: none;
+  }
 
   @media (max-width: 480px) {
-    background: url('/images/bg_a_solucao_mobile.png');
-    min-height: 150vh;
-    margin: 0;
+    background: none;
+    .hide-on-desktop {
+      display: block;
+    }
+    .coin {
+      width: 80%;
+      margin: 0 auto;
+    }
   }
-`
+`;
 
 export const FlexContainer = styled(Container)`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+`;
 
 export const SubtitleWrapper = styled.div`
   display: flex;
@@ -29,7 +37,7 @@ export const SubtitleWrapper = styled.div`
   @media (max-width: 480px) {
     margin-bottom: 3rem;
   }
-`
+`;
 
 export const SubtitleMainText = styled.p`
   color: var(--color-white);
@@ -46,7 +54,7 @@ export const SubtitleMainText = styled.p`
   @media (max-width: 480px) {
     font-size: 1.2rem;
   }
-`
+`;
 
 export const SubtitleSpan = styled.span`
   color: var(--color-yellow);
@@ -65,7 +73,7 @@ export const SubtitleSpan = styled.span`
   @media (max-width: 480px) {
     font-size: 1.2rem;
   }
-`
+`;
 
 export const CardWrapper = styled.div`
   width: 100%;
@@ -75,10 +83,7 @@ export const CardWrapper = styled.div`
   @media (max-width: 1024px) {
     justify-content: center !important;
   }
-  @media (max-width: 480px) {
-    margim-bottom: 20rem;
-  }
-`
+`;
 
 export const PositionedCard = styled.div`
   display: flex;
@@ -95,7 +100,7 @@ export const PositionedCard = styled.div`
     width: 85% !important;
     margin-bottom: 3rem;
   }
-`
+`;
 
 export const CardContent = styled.div`
   display: flex;
@@ -110,7 +115,7 @@ export const CardContent = styled.div`
     padding: 2rem;
     gap: 1.5rem;
   }
-`
+`;
 
 export const CardItem = styled.div`
   display: flex;
@@ -124,7 +129,7 @@ export const CardItem = styled.div`
     flex-direction: column;
     gap: 1rem;
   }
-`
+`;
 
 export const CardItemText = styled.p`
   color: var(--color-white);
@@ -139,7 +144,7 @@ export const CardItemText = styled.p`
     margin-left: 0;
     text-align: center;
   }
-`
+`;
 
 export const CardItemIcon = styled.div`
   width: 20%;
@@ -174,4 +179,4 @@ export const CardItemIcon = styled.div`
       text-align: center;
     }
   }
-`
+`;

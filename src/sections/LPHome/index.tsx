@@ -9,14 +9,14 @@ const LPHome: React.FC = () => {
     <S.Section>
       <HeaderContainer>
         <nav className="hide-on-mobile">
-          <img src="./images/logo_film-branco.png" alt="logo Filme Lab" />
+          <img src="/images/logo_film-branco.png" alt="logo Filme Lab" />
           <a href="#">Home</a>
           <a href="#class-content">Conteúdo Da Aula</a>
           <a href="#para-quem">Para Quem É Essa Aula</a>
         </nav>
         <img
           className="hide-on-desktop"
-          src="./images/logo_film-branco.png"
+          src="/images/logo_film-branco.png"
           alt="logo Filme Lab"
         />
       </HeaderContainer>
@@ -35,7 +35,7 @@ const LPHome: React.FC = () => {
         <S.ImageContainer>
           <img
             className="hide-on-desktop"
-            src="./images/foto-ceos.png"
+            src="/images/foto-ceos.png"
             alt="Foto de CEOs"
           />
         </S.ImageContainer>

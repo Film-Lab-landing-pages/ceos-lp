@@ -10,7 +10,7 @@ const QuemNaoEVisto: React.FC = () => {
       <Container>
         <Title>Quem Não é Visto, Não é Lembrado</Title>
         <VistoCard>
-          <img src="./images/star.png" alt="estrela" />
+          <img src="/images/star.png" alt="estrela" />
           <div>
             <h3>Market Research</h3>
             <p>
@@ -21,7 +21,7 @@ const QuemNaoEVisto: React.FC = () => {
           </div>
         </VistoCard>
         <VistoCard>
-          <img src="./images/star.png" alt="estrela" />
+          <img src="/images/star.png" alt="estrela" />
           <div>
             <h3>Market Research</h3>
             <p>
@@ -32,7 +32,7 @@ const QuemNaoEVisto: React.FC = () => {
           </div>
         </VistoCard>
         <VistoCard>
-          <img src="./images/star.png" alt="estrela" />
+          <img src="/images/star.png" alt="estrela" />
           <div>
             <h3>Market Research</h3>
             <p>

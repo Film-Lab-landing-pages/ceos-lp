@@ -1,14 +1,14 @@
-'use client'
+"use client";
 
-import Image from 'next/image'
-import { Card, Title } from '@/styles/globalStyles'
-import * as S from './styles'
+import Image from "next/image";
+import { Card, Title } from "@/styles/globalStyles";
+import * as S from "./styles";
 
 const solutions = [
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tellus id massa pretium semper aliquet ac.',
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tellus id massa pretium semper aliquet ac.',
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tellus id massa pretium semper aliquet ac.',
-]
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tellus id massa pretium semper aliquet ac.",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tellus id massa pretium semper aliquet ac.",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tellus id massa pretium semper aliquet ac.",
+];
 
 const ASolucao = () => {
   return (
@@ -47,9 +47,14 @@ const ASolucao = () => {
             </S.CardContent>
           </S.PositionedCard>
         </S.CardWrapper>
+        <img
+          className="hide-on-desktop coin"
+          src="/images/moeda.png"
+          alt="moeda"
+        />
       </S.FlexContainer>
     </S.SolucaoSection>
-  )
-}
+  );
+};
 
-export default ASolucao
+export default ASolucao;
