@@ -1,21 +1,20 @@
-import { off } from "process";
-import styled from "styled-components";
+import { off } from 'process'
+import styled from 'styled-components'
 
 export const colors = {
-  white: "#ffffff",
-  black: "#000000",
-  offWhite: "#D9D9D9",
-};
+  white: '#ffffff',
+  black: '#000000',
+  offWhite: '#D9D9D9',
+}
 
 export const Title = styled.h2`
   color: var(--color-yellow);
   font-size: 5rem;
   font-weight: bold;
-  /* line-height: 1; */
   @media (max-width: 480px) {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
-`;
+`
 
 export const Button = styled.button`
   width: 20rem;
@@ -43,7 +42,7 @@ export const Button = styled.button`
     background-color: rgba(255, 200, 2, 0.95);
     box-shadow: 0 0 8px 4px rgba(255, 200, 2, 0.7);
   }
-`;
+`
 
 export const Card = styled.div`
   max-height: 100%;
@@ -56,7 +55,7 @@ export const Card = styled.div`
   @media (max-width: 480px) {
     border-radius: 8px;
   }
-`;
+`
 
 export const Grid = styled.div`
   display: grid;
@@ -67,21 +66,21 @@ export const Grid = styled.div`
   margin: 0 auto;
   padding: 0 1rem;
   gap: 1rem;
-`;
+`
 export const Section = styled.section`
   width: 100%;
-  background: url("/images/bg_section02.png") center center no-repeat;
+  background: url('/images/bg_section02.png') center center no-repeat;
   background-size: cover;
-`;
+`
 
 export const Container = styled.div`
   width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-`;
+`
 
-export const HeaderContainer = styled(Card).attrs({ as: "header" })`
+export const HeaderContainer = styled(Card).attrs({ as: 'header' })`
   width: 50%;
   height: 70px;
   margin: 0 auto 5rem;
@@ -137,4 +136,4 @@ export const HeaderContainer = styled(Card).attrs({ as: "header" })`
       justify-self: center;
     }
   }
-`;
+`

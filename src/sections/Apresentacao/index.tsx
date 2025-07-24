@@ -1,7 +1,8 @@
-"use client";
+/* eslint-disable @next/next/no-img-element */
+'use client'
 
-import { Title, Container, HeaderContainer } from "@/styles/globalStyles";
-import * as S from "./styles";
+import { Title, Container, HeaderContainer } from '@/styles/globalStyles'
+import * as S from './styles'
 
 const Apresentacao = () => {
   return (
@@ -30,7 +31,7 @@ const Apresentacao = () => {
         </S.ApresentacaoText>
       </S.ApresentacaoContainerWrapper>
     </S.ApresentacaoSection>
-  );
-};
+  )
+}
 
-export default Apresentacao;
+export default Apresentacao
