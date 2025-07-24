@@ -117,6 +117,8 @@ export const Pacote = styled.div`
 export const Icon = styled.img`
   width: 9rem;
   height: 9rem;
+  object-fit: contain;
+  display: block;
 
   @media (max-width: 1024px) {
     width: 12rem;
@@ -124,8 +126,10 @@ export const Icon = styled.img`
   }
 
   @media (max-width: 480px) {
-    width: 6.2rem;
-    height: 6.2rem;
+    width: 9.8rem !important;
+    height: 9.8rem !important;
+    object-fit: contain;
+    display: block;
   }
 `
 
