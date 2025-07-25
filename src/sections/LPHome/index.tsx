@@ -32,18 +32,17 @@ const LPHome: React.FC = () => {
           </Title>
         </S.Card>
 
-        <S.ImageContainer>
-          <img
-            className="hide-on-desktop"
-            src="/images/foto-ceos.png"
-            alt="Foto de CEOs"
-          />
+        <S.ImageContainer className="hide-on-desktop">
+          <img src="/images/foto-ceos.png" alt="Foto de CEOs" />
         </S.ImageContainer>
 
         <S.Description>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-          porttitor est ac risus ullamcorper eleifend. Proin in nibh molestie
-          mauris dapibus molestie ut ut.
+          <b>
+            O posicionamento digital virou a principal alavanca de crescimento
+            para líderes visionários.
+          </b>
+          Executivos estratégicos online geram mais oportunidades e multiplicam
+          o valor de suas empresas
         </S.Description>
 
         <S.ButtonWrapper>

@@ -27,6 +27,10 @@ export const Section = styled.section`
 
 export const Container = styled(GlobalContainer)`
   align-items: left;
+  gap: 4rem;
+  @media (max-width: 768px) {
+    gap: 0;
+  }
 `;
 
 export const Card = styled(GlobalCard)`
@@ -116,8 +120,8 @@ export const CardMainText = styled.p`
 `;
 
 export const Description = styled.p`
-  font-size: 3rem;
-  max-width: 60%;
+  font-size: 2.5rem;
+  max-width: 65%;
   line-height: 49px;
   color: rgba(255, 255, 255, 0.7);
   padding: 0 1rem;
