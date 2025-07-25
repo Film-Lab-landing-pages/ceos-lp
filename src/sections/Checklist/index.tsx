@@ -2,20 +2,24 @@
 
 import { Card, Container, Title } from "@/styles/globalStyles";
 import React from "react";
-import { SairDessaSection, Subtitle } from "./styles";
+import { CheckItem, ChecklistSection, Subtitle } from "./styles";
 import { questions } from "./content";
 
 const SairDessa: React.FC = () => {
   return (
-    <SairDessaSection>
-      <Title>O Que Você Precisa Para Sair Dessa?</Title>
+    <ChecklistSection>
+      <Title>
+        Checklist de quem <br className="hide-on-desktop" /> quer virar o jogo
+      </Title>
       <Container className="container">
         <Card className="flex-card">
           {questions.map((question, index) => (
-            <div key={index} className="flex-item">
-              <img key={index + 50} src="/images/star.png" alt="estrela" />
-              <p>{question}</p>
-            </div>
+            <CheckItem key={index + 70}>
+              <img key={index + 50} src="/images/checkbox.png" alt="estrela" />
+              <div key={index} className="flex-item">
+                <p>{question}</p>
+              </div>
+            </CheckItem>
           ))}
         </Card>
         <img
@@ -24,7 +28,7 @@ const SairDessa: React.FC = () => {
           alt="seta lucros"
         />
       </Container>
-    </SairDessaSection>
+    </ChecklistSection>
   );
 };
 
