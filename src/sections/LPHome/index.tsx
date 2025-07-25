@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-'use client'
+"use client";
 
-import React from 'react'
-import * as S from './styles'
-import { Button, HeaderContainer, Title } from '@/styles/globalStyles'
-import InscriptionButton from '@/components/InscriptionButton'
+import React from "react";
+import * as S from "./styles";
+import { HeaderContainer, Title } from "@/styles/globalStyles";
+import InscriptionButton from "@/components/InscriptionButton";
 const LPHome: React.FC = () => {
   return (
     <S.Section>
@@ -33,19 +33,15 @@ const LPHome: React.FC = () => {
           </Title>
         </S.Card>
 
-        <S.ImageContainer>
-          <img
-            className="hide-on-desktop"
-            src="/images/foto-ceos.png"
-            alt="Foto de CEOs"
-          />
+        <S.ImageContainer className="hide-on-desktop">
+          <img src="/images/foto-ceos.png" alt="Foto de CEOs" />
         </S.ImageContainer>
 
         <S.Description>
-          <p className="poppins-bold">
+          <b>
             O posicionamento digital virou a principal alavanca de crescimento
             para líderes visionários.
-          </p>
+          </b>{" "}
           <span className="poppins-light">
             Executivos estratégicos online geram mais oportunidades e
             multiplicam o valor de suas empresas.
@@ -57,7 +53,7 @@ const LPHome: React.FC = () => {
         </S.ButtonWrapper>
       </S.Container>
     </S.Section>
-  )
-}
+  );
+};
 
-export default LPHome
+export default LPHome;
