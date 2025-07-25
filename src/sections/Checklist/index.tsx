@@ -2,12 +2,12 @@
 
 import { Card, Container, Title } from "@/styles/globalStyles";
 import React from "react";
-import { CheckItem, SairDessaSection, Subtitle } from "./styles";
+import { CheckItem, ChecklistSection, Subtitle } from "./styles";
 import { questions } from "./content";
 
 const SairDessa: React.FC = () => {
   return (
-    <SairDessaSection>
+    <ChecklistSection>
       <Title>
         Checklist de quem <br className="hide-on-desktop" /> quer virar o jogo
       </Title>
@@ -28,7 +28,7 @@ const SairDessa: React.FC = () => {
           alt="seta lucros"
         />
       </Container>
-    </SairDessaSection>
+    </ChecklistSection>
   );
 };
 

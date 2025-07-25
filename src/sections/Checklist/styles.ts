@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Section } from "@/styles/globalStyles";
 
-export const SairDessaSection = styled(Section)`
+export const ChecklistSection = styled(Section)`
   background-image: url("/images/bg_stocks-up.png");
   background-size: cover;
   h2 {
