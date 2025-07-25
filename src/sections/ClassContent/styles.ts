@@ -36,6 +36,9 @@ export const Flex = styled.div`
     margin-top: 1rem;
     justify-content: center;
   }
+  @media (max-width: 480px) {
+    gap: 1rem;
+  }
 `
 
 // export const Subtitle = styled.h4`
