@@ -1,12 +1,22 @@
-import { Container, Section } from "@/styles/globalStyles";
-import styled from "styled-components";
+import { Container, Section } from '@/styles/globalStyles'
+import styled from 'styled-components'
 
 export const SolucaoSection = styled(Section)`
   margin: 5rem 0;
-  background: url("/images/bg_a_solucao.png") center center no-repeat;
+  background: url('/images/bg_a_solucao.png') center center no-repeat;
   background-size: cover;
+  height: 95vh;
   .hide-on-desktop {
     display: none;
+  }
+  .hide-on-mobile {
+    display: inline;
+  }
+
+  @media (max-width: 1600px) {
+    .hide-on-mobile {
+      display: none;
+    }
   }
 
   @media (max-width: 480px) {
@@ -14,18 +24,23 @@ export const SolucaoSection = styled(Section)`
     .hide-on-desktop {
       display: block;
     }
+
+    .hide-on-mobile {
+      display: none;
+    }
+
     .coin {
       width: 80%;
       margin: 0 auto;
     }
   }
-`;
+`
 
 export const FlexContainer = styled(Container)`
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
+`
 
 export const SubtitleWrapper = styled.div`
   display: flex;
@@ -37,10 +52,10 @@ export const SubtitleWrapper = styled.div`
   @media (max-width: 480px) {
     margin-bottom: 3rem;
   }
-`;
+`
 
 export const SubtitleMainText = styled.p`
-  color: var(--color-white);
+  color: var(--color-yellow);
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 1rem;
@@ -54,10 +69,10 @@ export const SubtitleMainText = styled.p`
   @media (max-width: 480px) {
     font-size: 1.2rem;
   }
-`;
+`
 
 export const SubtitleSpan = styled.span`
-  color: var(--color-yellow);
+  color: var(--color-white);
   font-weight: bold;
   text-align: center;
   font-size: 1.5rem;
@@ -73,7 +88,7 @@ export const SubtitleSpan = styled.span`
   @media (max-width: 480px) {
     font-size: 1.2rem;
   }
-`;
+`
 
 export const CardWrapper = styled.div`
   width: 100%;
@@ -83,7 +98,7 @@ export const CardWrapper = styled.div`
   @media (max-width: 1024px) {
     justify-content: center !important;
   }
-`;
+`
 
 export const PositionedCard = styled.div`
   display: flex;
@@ -91,6 +106,7 @@ export const PositionedCard = styled.div`
   justify-content: center;
   width: 60%;
   margin-bottom: 5rem;
+  padding: 0 15px;
 
   @media (max-width: 1024px) {
     width: 90% !important;
@@ -100,14 +116,14 @@ export const PositionedCard = styled.div`
     width: 85% !important;
     margin-bottom: 3rem;
   }
-`;
+`
 
 export const CardContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
   width: 100%;
   padding: 2rem;
 
@@ -115,68 +131,105 @@ export const CardContent = styled.div`
     padding: 2rem;
     gap: 1.5rem;
   }
-`;
-
-export const CardItem = styled.div`
+`
+export const SolutionRow = styled.div`
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  gap: 5rem;
+  gap: 2rem;
   width: 100%;
 
-  @media (max-width: 480px) {
-    display: flex;
-    flex-direction: column;
+  @media (max-width: 1024px) {
     gap: 1rem;
   }
-`;
 
-export const CardItemText = styled.p`
-  color: var(--color-white);
-  font-size: 21px;
-  width: 80%;
-  margin-left: 4rem;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
   @media (max-width: 480px) {
-    order: 2;
-    font-size: 1.2rem;
-    width: 100%;
-    margin-left: 0;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
     text-align: center;
+    margin-bottom: 2.5rem;
   }
-`;
+`
 
-export const CardItemIcon = styled.div`
-  width: 20%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
+export const SolutionText = styled.div`
+  max-width: 80%;
 
-  .mobile-number {
-    display: none;
+  strong,
+  p {
+    font-size: 34px;
+    line-height: 49px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  strong {
+    color: var(--color-yellow);
+    font-weight: 700;
+  }
+
+  p {
+    color: var(--color-white);
   }
 
   @media (max-width: 1024px) {
-    width: auto;
-    justify-content: center;
+    font-size: 24px;
+
+    strong,
+    p {
+      font-size: 28px;
+      line-height: 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+    max-width: 100%;
+
+    strong,
+    p {
+      font-size: 28px;
+      line-height: 40px;
+    }
+
+    @media (max-width: 480px) {
+      max-width: 100%;
+
+      strong,
+      p {
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      p + p {
+        margin-top: 0.2rem;
+      }
+    }
+  }
+`
+
+export const SolutionNumber = styled.span`
+  font-size: 70px;
+  line-height: 33px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700; /* poppins-bold */
+  color: var(--color-yellow);
+
+  @media (max-width: 768px) {
+    font-size: 55px;
+    line-height: 30px;
   }
 
   @media (max-width: 480px) {
-    width: 100%;
-    justify-content: center;
-    order: 1;
-
-    img,
-    [data-nimg] {
-      display: none !important;
-    }
-
-    .mobile-number {
-      display: block;
-      font-size: 4.5rem;
-      color: #ffc802;
-      font-weight: bold;
-      text-align: center;
-    }
+    order: -1; /* Coloca o número acima */
+    font-size: 48px;
+    line-height: 28px;
+    margin-bottom: 0.5rem;
   }
-`;
+`

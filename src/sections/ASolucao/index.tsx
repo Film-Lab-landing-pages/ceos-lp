@@ -1,14 +1,43 @@
-"use client";
+/* eslint-disable @next/next/no-img-element */
+'use client'
 
-import Image from "next/image";
-import { Card, Title } from "@/styles/globalStyles";
-import * as S from "./styles";
+import { Card, Title } from '@/styles/globalStyles'
+import * as S from './styles'
 
 const solutions = [
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tellus id massa pretium semper aliquet ac.",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tellus id massa pretium semper aliquet ac.",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec tellus id massa pretium semper aliquet ac.",
-];
+  {
+    number: '01',
+    text: (
+      <>
+        <p>
+          <strong>Direção de cena</strong> pra te destravar
+        </p>
+        <br className="hide-on-mobile" />
+        <p>na frente das câmeras.</p>
+      </>
+    ),
+  },
+  {
+    number: '02',
+    text: (
+      <>
+        <p>
+          Estratégia baseada em <strong>análise de dados.</strong>
+        </p>
+      </>
+    ),
+  },
+  {
+    number: '03',
+    text: (
+      <>
+        <strong>Soluções 360</strong>
+        <br />
+        <p>sem dor de cabeça.</p>
+      </>
+    ),
+  },
+]
 
 const ASolucao = () => {
   return (
@@ -18,31 +47,22 @@ const ASolucao = () => {
 
         <S.SubtitleWrapper>
           <S.SubtitleMainText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
-            tellus id massa pretium semper aliquet ac metus.
+            Se respondeu “não” pra qualquer item, relaxa.
           </S.SubtitleMainText>
           <S.SubtitleSpan>
-            In lacinia eros sed nulla dignissim, eu ultricies nisi lacinia.
+            É por isso que criamos nossos planos de gestão com estratégia e
+            intenção — pra fazer sua presença digital valer a pena.
           </S.SubtitleSpan>
         </S.SubtitleWrapper>
 
         <S.CardWrapper>
           <S.PositionedCard as={Card}>
             <S.CardContent>
-              {solutions.map((text, index) => (
-                <S.CardItem key={index}>
-                  {/* Mantemos a ordem Texto -> Ícone para desktop */}
-                  <S.CardItemText>{text}</S.CardItemText>
-                  <S.CardItemIcon>
-                    <Image
-                      src="/images/estrela_amarela.svg"
-                      alt="Estrela"
-                      width={93}
-                      height={104}
-                    />
-                    <span className="mobile-number">{index + 1}</span>
-                  </S.CardItemIcon>
-                </S.CardItem>
+              {solutions.map((item, index) => (
+                <S.SolutionRow key={index}>
+                  <S.SolutionText>{item.text}</S.SolutionText>
+                  <S.SolutionNumber>{item.number}</S.SolutionNumber>
+                </S.SolutionRow>
               ))}
             </S.CardContent>
           </S.PositionedCard>
@@ -54,7 +74,7 @@ const ASolucao = () => {
         />
       </S.FlexContainer>
     </S.SolucaoSection>
-  );
-};
+  )
+}
 
-export default ASolucao;
+export default ASolucao
