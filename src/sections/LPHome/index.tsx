@@ -41,7 +41,7 @@ const LPHome: React.FC = () => {
           <b>
             O posicionamento digital virou a principal alavanca de crescimento
             para líderes visionários.
-          </b>
+          </b>{" "}
           <span className="poppins-light">
             Executivos estratégicos online geram mais oportunidades e
             multiplicam o valor de suas empresas.
