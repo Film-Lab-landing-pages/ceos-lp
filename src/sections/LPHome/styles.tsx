@@ -29,7 +29,7 @@ export const Container = styled(GlobalContainer)`
   align-items: left;
   gap: 4rem;
   @media (max-width: 768px) {
-    gap: 0;
+    gap: 3rem;
   }
 `;
 
@@ -129,17 +129,18 @@ export const Description = styled.p`
   text-align: left;
   align-self: start;
   border-left: 2px solid var(--color-white);
+  display: flex;
+  flex-direction: column;
 
-  p,
-  span {
+  span,
+  b {
     font-size: 3rem;
     line-height: 49px;
     color: rgba(255, 255, 255, 0.7);
   }
 
-  p {
+  b {
     font-family: "Poppins Bold", sans-serif;
-    margin-bottom: 1.5rem;
   }
 
   span {
@@ -150,8 +151,8 @@ export const Description = styled.p`
     padding: 0 0.5rem;
     max-width: 100%;
 
-    p,
-    span {
+    span,
+    b {
       font-size: 2rem;
       line-height: 38px;
     }
@@ -160,8 +161,8 @@ export const Description = styled.p`
   @media (max-width: 480px) {
     margin: 0 0 2rem;
 
-    p,
-    span {
+    span,
+    b {
       font-size: 1.2rem;
       line-height: 1.8rem;
     }
