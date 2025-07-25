@@ -130,17 +130,41 @@ export const Description = styled.p`
   align-self: start;
   border-left: 2px solid var(--color-white);
 
+  p,
+  span {
+    font-size: 3rem;
+    line-height: 49px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  p {
+    font-family: "Poppins Bold", sans-serif;
+    margin-bottom: 1.5rem;
+  }
+
+  span {
+    font-family: "Poppins Light", sans-serif;
+  }
+
   @media (max-width: 768px) {
     padding: 0 0.5rem;
     max-width: 100%;
-    font-size: 2rem;
-    line-height: 38px;
+
+    p,
+    span {
+      font-size: 2rem;
+      line-height: 38px;
+    }
   }
 
   @media (max-width: 480px) {
-    font-size: 1.2rem;
-    line-height: 1.8rem;
     margin: 0 0 2rem;
+
+    p,
+    span {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
   }
 `;
 

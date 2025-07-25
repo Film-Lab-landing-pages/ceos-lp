@@ -1,8 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React from "react";
 import * as S from "./styles";
-import { Button, HeaderContainer, Title } from "@/styles/globalStyles";
+import { HeaderContainer, Title } from "@/styles/globalStyles";
 import InscriptionButton from "@/components/InscriptionButton";
 const LPHome: React.FC = () => {
   return (
@@ -41,8 +42,10 @@ const LPHome: React.FC = () => {
             O posicionamento digital virou a principal alavanca de crescimento
             para líderes visionários.
           </b>
-          Executivos estratégicos online geram mais oportunidades e multiplicam
-          o valor de suas empresas
+          <span className="poppins-light">
+            Executivos estratégicos online geram mais oportunidades e
+            multiplicam o valor de suas empresas.
+          </span>
         </S.Description>
 
         <S.ButtonWrapper>
