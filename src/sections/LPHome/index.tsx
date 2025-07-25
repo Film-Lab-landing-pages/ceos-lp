@@ -1,9 +1,10 @@
-"use client";
+/* eslint-disable @next/next/no-img-element */
+'use client'
 
-import React from "react";
-import * as S from "./styles";
-import { Button, HeaderContainer, Title } from "@/styles/globalStyles";
-import InscriptionButton from "@/components/InscriptionButton";
+import React from 'react'
+import * as S from './styles'
+import { Button, HeaderContainer, Title } from '@/styles/globalStyles'
+import InscriptionButton from '@/components/InscriptionButton'
 const LPHome: React.FC = () => {
   return (
     <S.Section>
@@ -41,9 +42,14 @@ const LPHome: React.FC = () => {
         </S.ImageContainer>
 
         <S.Description>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-          porttitor est ac risus ullamcorper eleifend. Proin in nibh molestie
-          mauris dapibus molestie ut ut.
+          <p className="poppins-bold">
+            O posicionamento digital virou a principal alavanca de crescimento
+            para líderes visionários.
+          </p>
+          <span className="poppins-light">
+            Executivos estratégicos online geram mais oportunidades e
+            multiplicam o valor de suas empresas.
+          </span>
         </S.Description>
 
         <S.ButtonWrapper>
@@ -51,7 +57,7 @@ const LPHome: React.FC = () => {
         </S.ButtonWrapper>
       </S.Container>
     </S.Section>
-  );
-};
+  )
+}
 
-export default LPHome;
+export default LPHome
