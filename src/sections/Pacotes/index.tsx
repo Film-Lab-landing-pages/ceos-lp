@@ -11,12 +11,9 @@ const Pacotes = () => {
 
         <S.SubtitleWrapper>
           <S.SubtitleMainText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec
-            tellus id massa pretium semper aliquet ac metus.
+            Pronto pra colocar tudo isso em prática com consistência?
           </S.SubtitleMainText>
-          <S.SubtitleSpan>
-            In lacinia eros sed nulla dignissim, eu ultricies nisi lacinia.
-          </S.SubtitleSpan>
+          <S.SubtitleSpan>Escolha o pacote ideal pra sua marca.</S.SubtitleSpan>
         </S.SubtitleWrapper>
 
         <S.PacotesGrid>
