@@ -1,17 +1,17 @@
-import styled from 'styled-components'
-import { Card, Section } from '@/styles/globalStyles'
+import styled from "styled-components";
+import { Card, Section } from "@/styles/globalStyles";
 
 export const VistoSection = styled(Section)`
   padding: 5rem 0;
   margin-bottom: 2.5rem;
-  background: url('/images/bg_instagram-mobile.png') center center no-repeat;
+  background: url("/images/bg_instagram-mobile.png") center center no-repeat;
   background-size: cover;
   @media (max-width: 480px) {
-    background: url('/images/bg_instagram-mobile-mobile.png') center center
+    background: url("/images/bg_instagram-mobile-mobile.png") center center
       no-repeat;
     background-size: contain;
   }
-`
+`;
 
 export const Container = styled.div`
   width: 80%;
@@ -47,14 +47,14 @@ export const Container = styled.div`
       margin-bottom: 2rem;
     }
   }
-`
+`;
 
 export const VistoCard = styled(Card)`
   width: 60%;
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding: 2rem 7%;
+  padding: 2rem 4%;
   img {
     height: 70px;
   }
@@ -71,4 +71,4 @@ export const VistoCard = styled(Card)`
       height: 4em;
     }
   }
-`
+`;
