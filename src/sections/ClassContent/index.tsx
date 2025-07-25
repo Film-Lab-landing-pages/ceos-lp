@@ -1,8 +1,8 @@
-"use client";
+/* eslint-disable @next/next/no-img-element */
+'use client'
 
-import React from "react";
+import React from 'react'
 import {
-  Subtitle,
   RightList,
   RightContainer,
   LeftContainer,
@@ -10,26 +10,30 @@ import {
   ClassSection,
   Container,
   Flex,
-} from "./styles";
-import { Title, Card } from "@/styles/globalStyles";
-import InscriptionButton from "@/components/InscriptionButton";
+} from './styles'
+import { Title, Card } from '@/styles/globalStyles'
+import InscriptionButton from '@/components/InscriptionButton'
 
 export default function SectionClassContent() {
   return (
     <ClassSection id="class-content">
       <Container>
         <Title className="poppins-bold">Conteúdo Da Aula</Title>
-        <Subtitle className="poppins-light">
-          theme focused on creating seamless connections
-        </Subtitle>
         <Flex>
           <LeftContainer>
             <Card>
               <h3 className="poppins-medium">MasterClass para CEOs</h3>
-              <p className="poppins-light">
-                With a modern design and a focus on trust and excellence, this
-                theme empowers organizations to overcome challenges.
-              </p>
+              <ul>
+                <li className="poppins-light">
+                  Descubra qual persona combina com você.
+                </li>
+                <li className="poppins-light">
+                  Posicione-se de forma natural e autêntica.
+                </li>
+                <li className="poppins-light">
+                  Defina sua marca pessoal com precisão.
+                </li>
+              </ul>
             </Card>
           </LeftContainer>
           <CenterContainer>
@@ -40,10 +44,22 @@ export default function SectionClassContent() {
             <Card>
               <RightList>
                 <li>
-                  seize opportunities, and achieve long-term success in an ever.
+                  <span className="poppins-bold">01</span>
+                  <p className="poppins-light">
+                    Método exclusivo para destravar nas câmeras.
+                  </p>
                 </li>
                 <li>
-                  seize opportunities, and achieve long-term success in an ever.
+                  <span className="poppins-bold">02</span>
+                  <p className="poppins-light">
+                    Transforme nervosismo em presença magnética.
+                  </p>
+                </li>
+                <li>
+                  <span className="poppins-bold">03</span>
+                  <p className="poppins-light">
+                    A solução definitiva para comunicação impactante.
+                  </p>
                 </li>
               </RightList>
             </Card>
@@ -52,5 +68,5 @@ export default function SectionClassContent() {
         <InscriptionButton />
       </Container>
     </ClassSection>
-  );
+  )
 }

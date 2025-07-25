@@ -1,10 +1,10 @@
-import { Section } from "@/styles/globalStyles";
-import styled from "styled-components";
-import { Container as GlobalContainer } from "@/styles/globalStyles";
+import { Section } from '@/styles/globalStyles'
+import styled from 'styled-components'
+import { Container as GlobalContainer } from '@/styles/globalStyles'
 
 export const ClassSection = styled(Section)`
   margin: 5rem 0;
-  background: url("/images/bg_section02.png") center center no-repeat;
+  background: url('/images/bg_section02.png') center center no-repeat;
   background-size: cover;
   @media (max-width: 1024px) {
     margin: 4rem 0;
@@ -15,17 +15,17 @@ export const ClassSection = styled(Section)`
     }
   }
   @media (max-width: 480px) {
-    background: url("/images/bg-2-mobile.png") center center no-repeat;
+    background: url('/images/bg-2-mobile.png') center center no-repeat;
     background-size: cover;
   }
-`;
+`
 
 export const Container = styled(GlobalContainer)`
   width: 80%;
   button {
     margin: 0 auto;
   }
-`;
+`
 
 export const Flex = styled.div`
   display: flex;
@@ -36,45 +36,61 @@ export const Flex = styled.div`
     margin-top: 1rem;
     justify-content: center;
   }
-`;
+`
 
-export const Subtitle = styled.h4`
-  color: #ccc;
-  font-size: 2rem;
-  line-height: 1;
-  @media (max-width: 480px) {
-    font-size: 1.2rem;
-    margin: 0 auto;
-  }
-`;
+// export const Subtitle = styled.h4`
+//   color: #ccc;
+//   font-size: 2rem;
+//   line-height: 1;
+//   @media (max-width: 480px) {
+//     font-size: 1.2rem;
+//     margin: 0 auto;
+//   }
+// `
 
 export const LeftContainer = styled.div`
-  width: 30%;
+  width: 35%;
   padding: 1rem;
   padding-left: 0;
 
   div {
     padding: 16px;
   }
+
   h3 {
     font-size: 4rem;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     line-height: 4rem;
     color: #ffffff;
     word-break: break-word;
   }
-  p {
-    font-size: 1.5rem;
-    color: rgba(255, 255, 255, 0.7);
-    line-height: 30px;
+
+  ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+
+    li {
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 0.5rem;
+      margin-left: 1rem;
+    }
   }
+
   @media (max-width: 1024px) {
     width: 80%;
     align-self: center;
     text-align: center;
+
     h3 {
       font-size: 3rem;
       margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1rem;
     }
   }
 
@@ -85,12 +101,17 @@ export const LeftContainer = styled.div`
       margin: 0 auto 1.2rem;
       line-height: 2.1rem;
     }
-    p {
-      font-size: 1.2rem;
-      line-height: 1.5rem;
+
+    ul {
+      padding-left: 1rem;
+
+      li {
+        font-size: 0.95rem;
+        line-height: 1.6rem;
+      }
     }
   }
-`;
+`
 
 export const CenterContainer = styled.div`
   padding: 1rem;
@@ -117,22 +138,24 @@ export const CenterContainer = styled.div`
     padding: 0;
     align-self: center;
   }
-`;
+`
 
 export const RightContainer = styled.div`
-  width: 30%;
+  width: 40%;
   padding: 1rem;
   align-self: flex-end;
 
   div {
     padding: 16px;
   }
+
   h3 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     font-family: var(--font-poppins);
     width: 100%;
   }
+
   @media (max-width: 1024px) {
     width: 80%;
     align-self: center;
@@ -142,6 +165,7 @@ export const RightContainer = styled.div`
   @media (max-width: 768px) {
     width: 80%;
     align-self: center;
+
     h3 {
       text-align: center;
       font-size: 1.5rem;
@@ -149,32 +173,48 @@ export const RightContainer = styled.div`
       line-height: 2.1rem;
     }
   }
-`;
+`
 
 export const RightList = styled.ul`
-  list-style: decimal-leading-zero;
+  list-style: none;
+  padding: 0;
+  margin: 0;
   border-radius: 16px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
   li {
-    margin-left: 16px;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: rgba(255, 255, 255, 0.7);
-    line-height: 30px;
-
-    font-weight: 300;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  li span {
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0.2rem;
+    text-align: center;
+  }
+
+  li p {
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    text-align: center;
+  }
+
   @media (max-width: 480px) {
     padding-left: 1rem;
-    li {
-      margin: 0 2 0 0rem;
-      font-size: 1.2rem;
-      line-height: 1.5rem;
+
+    li span,
+    li p {
+      font-size: 14px;
+      line-height: 18px;
     }
   }
-`;
+`
