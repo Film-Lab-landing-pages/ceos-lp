@@ -146,11 +146,11 @@ export const GridItem = styled(Card)`
   }
   p {
     color: #ffffffb2;
-    width: 65%;
+    width: 70%;
     font-weight: 300;
     font-style: Light;
     font-size: 1.2rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
     margin-top: 0;
   }
   @media (max-width: 1024px) {
