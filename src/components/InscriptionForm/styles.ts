@@ -69,6 +69,14 @@ export const InscriptionContainer = styled.div`
     background: rgba(0, 0, 0, 0.5);
     z-index: 70;
   }
+  .error-message {
+    color: #f9322bcc;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+    font-weight: 500;
+  }
 
   @media (max-width: 768px) {
     form {

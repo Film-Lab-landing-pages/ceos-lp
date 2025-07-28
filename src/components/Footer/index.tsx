@@ -19,7 +19,14 @@ const Footer: React.FC = () => {
           direitos reservados.
         </p>
       </div>
-      <p className="filmelab-website">www.filmelab.com.br</p>
+      <a
+        className="filmelab-website"
+        href="https://www.filmelab.com.br"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        www.filmelab.com.br
+      </a>
     </FooterContainer>
   );
 };
