@@ -1,16 +1,16 @@
-import styled from 'styled-components'
-import { Section, Container } from '@/styles/globalStyles'
+import styled from "styled-components";
+import { Section, Container } from "@/styles/globalStyles";
 
 export const ApresentacaoSection = styled(Section)`
-  margin: 5rem 0;
-  background: url('/images/bg_apresentacao.png') center center no-repeat;
+  padding: 5rem 0;
+  background: url("/images/bg_apresentacao.png") center center no-repeat;
   background-size: cover;
   .hide-on-desktop {
     display: none;
   }
 
   @media (max-width: 480px) {
-    background: url('/images/bg_apresentacao_mobile.png') center center
+    background: url("/images/bg_apresentacao_mobile.png") center center
       no-repeat;
     .hide-on-desktop {
       display: block;
@@ -19,7 +19,7 @@ export const ApresentacaoSection = styled(Section)`
       display: none;
     }
   }
-`
+`;
 export const ApresentacaoTitle = styled.h1`
   color: var(--color-yellow);
   font-size: 5.3rem;
@@ -36,7 +36,7 @@ export const ApresentacaoTitle = styled.h1`
     line-height: 3.5rem;
     text-align: center;
   }
-`
+`;
 
 export const ApresentacaoContainerWrapper = styled(Container)`
   justify-content: center;
@@ -51,12 +51,12 @@ export const ApresentacaoContainerWrapper = styled(Container)`
   @media (max-width: 480px) {
     width: 85%;
   }
-`
+`;
 
 export const ApresentacaoContainer = styled.div`
   width: 66%;
   aspect-ratio: 3 / 2;
-  background-image: url('https://placehold.co/600x400/D9D9D9/FFF?text=Placeholder');
+  background-image: url("https://placehold.co/600x400/D9D9D9/FFF?text=Placeholder");
   background-size: cover;
   background-position: center;
   margin: 2rem 0;
@@ -70,7 +70,7 @@ export const ApresentacaoContainer = styled.div`
     width: 95%;
     aspect-ratio: 4 / 3;
   }
-`
+`;
 
 export const ApresentacaoText = styled.p`
   font-size: 2.125rem;
@@ -88,4 +88,4 @@ export const ApresentacaoText = styled.p`
     text-align: center;
     line-height: 3rem;
   }
-`
+`;

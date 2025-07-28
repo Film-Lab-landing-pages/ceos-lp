@@ -2,8 +2,10 @@ import styled from "styled-components";
 import { Section } from "@/styles/globalStyles";
 
 export const ChecklistSection = styled(Section)`
+  padding: 2.5rem 0;
   background-image: url("/images/bg_stocks-up.png");
   background-size: cover;
+
   h2 {
     margin: 0 auto 5.5rem;
     font-size: 4.75rem;

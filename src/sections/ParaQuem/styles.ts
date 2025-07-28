@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { css } from "styled-components";
 
 export const ParaQuemContainer = styled.section`
-  margin: 0 auto 5.5rem;
+  margin: 2.5rem auto 5.5rem;
   display: flex;
   align-items: center;
   flex-direction: column;

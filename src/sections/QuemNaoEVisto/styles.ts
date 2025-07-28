@@ -2,8 +2,7 @@ import styled from "styled-components";
 import { Card, Section } from "@/styles/globalStyles";
 
 export const VistoSection = styled(Section)`
-  padding: 5rem 0;
-  margin-bottom: 2.5rem;
+  padding: 5rem 0 7.5rem;
   background: url("/images/bg_instagram-mobile.png") center center no-repeat;
   background-size: cover;
   @media (max-width: 480px) {

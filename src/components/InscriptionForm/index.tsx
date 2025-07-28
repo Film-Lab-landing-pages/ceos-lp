@@ -1,6 +1,7 @@
 "use client";
 
 import React, { use } from "react";
+import { IMaskInput } from "react-imask";
 import { CloseButton, InscriptionContainer } from "./styles";
 import { useInscriptionStore } from "@/store/store";
 import { useRouter } from "next/navigation";
@@ -28,7 +29,12 @@ const InscriptionForm: React.FC = () => {
             </CloseButton>
             <input type="text" placeholder="Nome" />
             <input type="email" placeholder="Email" />
-            <input type="text" placeholder="Celular" />
+            <IMaskInput
+              mask="(00) 00000-0000"
+              name="celular"
+              placeholder="(99) 99999-9999"
+              unmask={true}
+            />
             <button type="submit" onClick={handleFormSubmit}>
               Inscrição
             </button>
