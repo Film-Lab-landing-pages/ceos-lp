@@ -2,10 +2,20 @@
 "use client";
 
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import * as S from "./styles";
 import { HeaderContainer, Title } from "@/styles/globalStyles";
 import InscriptionButton from "@/components/InscriptionButton";
 const LPHome: React.FC = () => {
+  React.useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: true, // Anima apenas uma vez
+      mirror: false,
+    });
+  }, []);
   return (
     <S.Section>
       <HeaderContainer>
@@ -21,7 +31,7 @@ const LPHome: React.FC = () => {
           alt="logo Filme Lab"
         />
       </HeaderContainer>
-      <S.Container>
+      <S.Container data-aos="fade-right">
         <S.Card>
           <S.CardHeader className="poppins-bold">
             MASTERCLASS PARA CEOs
