@@ -1,12 +1,12 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 import {
   Card as GlobalCard,
   Container as GlobalContainer,
-} from "@/styles/globalStyles";
+} from '@/styles/globalStyles'
 
 export const Section = styled.section`
   width: 100%;
-  background: url("/images/bg_lp_home.png") center center no-repeat;
+  background: url('/images/bg_lp_home.png') center center no-repeat;
   background-size: cover;
   padding: 5% 0;
   .hide-on-desktop {
@@ -14,7 +14,7 @@ export const Section = styled.section`
   }
 
   @media (max-width: 480px) {
-    background: url("/images/bg_lp_home-mobile.png") center center no-repeat;
+    background: url('/images/bg_lp_home-mobile.png') center center no-repeat;
     background-size: cover;
     .hide-on-desktop {
       display: block;
@@ -23,7 +23,7 @@ export const Section = styled.section`
       display: none;
     }
   }
-`;
+`
 
 export const Container = styled(GlobalContainer)`
   align-items: left;
@@ -32,7 +32,7 @@ export const Container = styled(GlobalContainer)`
   @media (max-width: 768px) {
     gap: 3rem;
   }
-`;
+`
 
 export const Card = styled(GlobalCard)`
   display: flex;
@@ -42,10 +42,10 @@ export const Card = styled(GlobalCard)`
   padding: 2rem;
   width: 50%;
   h2 {
-    color: var(--color-white);
+    color: var(--color-yellow);
   }
   span {
-    color: var(--color-yellow);
+    color: var(--color-white);
   }
 
   @media (max-width: 1024px) {
@@ -79,7 +79,7 @@ export const Card = styled(GlobalCard)`
       text-align: center;
     }
   }
-`;
+`
 
 export const CardHeader = styled.h1`
   color: var(--color-yellow);
@@ -96,7 +96,7 @@ export const CardHeader = styled.h1`
   @media (max-width: 480px) {
     padding: 4px 8px;
   }
-`;
+`
 
 export const CardMainText = styled.p`
   font-size: 71px;
@@ -118,11 +118,11 @@ export const CardMainText = styled.p`
     font-size: 36px;
     line-height: 48px;
   }
-`;
+`
 
 export const Description = styled.p`
   font-size: 2.5rem;
-  max-width: 65%;
+  max-width: 80%;
   line-height: 49px;
   color: rgba(255, 255, 255, 0.7);
   padding: 0 1rem;
@@ -141,11 +141,11 @@ export const Description = styled.p`
   }
 
   b {
-    font-family: "Poppins Bold", sans-serif;
+    font-family: 'Poppins Bold', sans-serif;
   }
 
   span {
-    font-family: "Poppins Light", sans-serif;
+    font-family: 'Poppins Light', sans-serif;
   }
 
   @media (max-width: 768px) {
@@ -168,7 +168,7 @@ export const Description = styled.p`
       line-height: 1.8rem;
     }
   }
-`;
+`
 
 export const ButtonWrapper = styled.div`
   grid-column: 2 / 4;
@@ -191,7 +191,7 @@ export const ButtonWrapper = styled.div`
     justify-content: center;
     margin: 2rem 0;
   }
-`;
+`
 
 export const ImageContainer = styled.div`
   max-width: 80%;
@@ -201,4 +201,65 @@ export const ImageContainer = styled.div`
     width: 100%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   }
-`;
+`
+
+export const InfoBox = styled.div`
+  width: 84%;
+  height: 194px;
+  margin: 3rem auto 0;
+  backdrop-filter: blur(60px);
+  border-radius: 16px;
+  border: 2px solid rgba(255, 200, 2, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  gap: 1rem;
+
+  .main-text {
+    font-size: 2.625rem; /* 42px converted to rem */
+    line-height: 3rem; /* 42px converted to rem */
+    color: var(--color-yellow);
+    margin: 0;
+  }
+
+  .sub-text {
+    font-size: 1.7rem; /* 32px converted to rem */
+    line-height: 2.625rem; /* 42px converted to rem */
+    color: var(--color-white);
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    height: auto;
+    padding: 1.5rem;
+
+    .main-text {
+      font-size: 1.8rem;
+      line-height: 2rem;
+    }
+
+    .sub-text {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    width: 95%;
+    padding: 1rem;
+
+    .main-text {
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+    }
+
+    .sub-text {
+      font-size: 1.1rem;
+      line-height: 1.4rem;
+    }
+  }
+`

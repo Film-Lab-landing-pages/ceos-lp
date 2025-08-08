@@ -1,21 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
-"use client";
+'use client'
 
-import React from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import * as S from "./styles";
-import { HeaderContainer, Title } from "@/styles/globalStyles";
-import InscriptionButton from "@/components/InscriptionButton";
+import React from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import * as S from './styles'
+import { HeaderContainer, Title } from '@/styles/globalStyles'
+import InscriptionButton from '@/components/InscriptionButton'
 const LPHome: React.FC = () => {
   React.useEffect(() => {
     AOS.init({
       duration: 800,
-      easing: "ease-in-out",
+      easing: 'ease-in-out',
       once: true, // Anima apenas uma vez
       mirror: false,
-    });
-  }, []);
+    })
+  }, [])
   return (
     <S.Section>
       <HeaderContainer>
@@ -34,12 +34,12 @@ const LPHome: React.FC = () => {
       <S.Container data-aos="fade-right">
         <S.Card>
           <S.CardHeader className="poppins-bold">
-            MASTERCLASS PARA CEOs
+            Você entre os maiores do mercado!
           </S.CardHeader>
           <Title>
-            Quem não é visto,
+            Autoridade Digital
             <br />
-            <span>não é lembrado!</span>
+            <span>para CEOs</span>
           </Title>
         </S.Card>
 
@@ -49,21 +49,31 @@ const LPHome: React.FC = () => {
 
         <S.Description>
           <b>
-            O posicionamento digital virou a principal alavanca de crescimento
-            para líderes visionários.
-          </b>{" "}
-          <span className="poppins-light">
-            Executivos estratégicos online geram mais oportunidades e
-            multiplicam o valor de suas empresas.
-          </span>
+            Aprenda a começar a dominar sua comunicação e posicionamento{' '}
+            <span className="poppins-light">
+              - com técnicas de oratória, marketing e branding pessoal voltadas
+              para líderes.
+            </span>
+          </b>
         </S.Description>
 
         <S.ButtonWrapper>
-          <InscriptionButton />
+          <InscriptionButton text="Se destaque no digital!" />
         </S.ButtonWrapper>
+
+        <S.InfoBox>
+          <b className="poppins-bold main-text">
+            O posicionamento digital virou a principal alavanca de crescimento
+            para líderes visionários.
+          </b>
+          <span className="poppins-light sub-text">
+            Executivos estratégicos online geram mais oportunidades e
+            multiplicam o valor de suas empresas.
+          </span>
+        </S.InfoBox>
       </S.Container>
     </S.Section>
-  );
-};
+  )
+}
 
-export default LPHome;
+export default LPHome

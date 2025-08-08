@@ -1,16 +1,22 @@
-"use client";
+'use client'
 
-import React from "react";
-import { useInscriptionStore } from "@/store/store";
-import { Button } from "@/styles/globalStyles";
+import React from 'react'
+import { useInscriptionStore } from '@/store/store'
+import { Button } from '@/styles/globalStyles'
 
-const InscriptionButton: React.FC = () => {
-  const { showForm } = useInscriptionStore();
+interface InscriptionButtonProps {
+  text?: string
+}
+
+const InscriptionButton: React.FC<InscriptionButtonProps> = ({
+  text = 'Inscrição',
+}) => {
+  const { showForm } = useInscriptionStore()
   return (
     <Button onClick={showForm} className="poppins-xbold class-content">
-      Inscrição
+      {text}
     </Button>
-  );
-};
+  )
+}
 
-export default InscriptionButton;
+export default InscriptionButton

@@ -1,11 +1,11 @@
-import { off } from "process";
-import styled from "styled-components";
+import { off } from 'process'
+import styled from 'styled-components'
 
 export const colors = {
-  white: "#ffffff",
-  black: "#000000",
-  offWhite: "#D9D9D9",
-};
+  white: '#ffffff',
+  black: '#000000',
+  offWhite: '#D9D9D9',
+}
 
 export const Title = styled.h2`
   color: var(--color-yellow);
@@ -14,14 +14,15 @@ export const Title = styled.h2`
   @media (max-width: 480px) {
     font-size: 2.8rem;
   }
-`;
+`
 
 export const Button = styled.button`
-  width: 20rem;
+  width: auto;
+  min-width: 14rem;
 
   color: var(--color-black);
   background-color: rgba(255, 200, 2, 0.85);
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
   font-size: 1.5rem;
   font-weight: 900;
   font-style: bold;
@@ -33,16 +34,18 @@ export const Button = styled.button`
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s;
+  white-space: nowrap;
 
   @media (max-width: 480px) {
-    width: 14rem;
+    min-width: 12rem;
+    padding: 1.5rem 1.5rem;
   }
 
   &:hover {
     background-color: rgba(255, 200, 2, 0.95);
     box-shadow: 0 0 8px 4px rgba(255, 200, 2, 0.7);
   }
-`;
+`
 
 export const Card = styled.div`
   max-height: 100%;
@@ -55,7 +58,7 @@ export const Card = styled.div`
   @media (max-width: 480px) {
     border-radius: 8px;
   }
-`;
+`
 
 export const Grid = styled.div`
   display: grid;
@@ -66,21 +69,21 @@ export const Grid = styled.div`
   margin: 0 auto;
   padding: 0 1rem;
   gap: 1rem;
-`;
+`
 export const Section = styled.section`
   width: 100%;
-  background: url("/images/bg_section02.png") center center no-repeat;
+  background: url('/images/bg_section02.png') center center no-repeat;
   background-size: cover;
-`;
+`
 
 export const Container = styled.div`
   width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-`;
+`
 
-export const HeaderContainer = styled(Card).attrs({ as: "header" })`
+export const HeaderContainer = styled(Card).attrs({ as: 'header' })`
   width: 50%;
   height: 70px;
   margin: 0 auto 5rem;
@@ -136,4 +139,4 @@ export const HeaderContainer = styled(Card).attrs({ as: "header" })`
       justify-self: center;
     }
   }
-`;
+`
