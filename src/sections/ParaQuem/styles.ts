@@ -1,6 +1,6 @@
-import { Card } from "@/styles/globalStyles";
-import styled from "styled-components";
-import { css } from "styled-components";
+import { Card } from '@/styles/globalStyles'
+import styled from 'styled-components'
+import { css } from 'styled-components'
 
 export const ParaQuemContainer = styled.section`
   margin: 2.5rem auto 5.5rem;
@@ -13,15 +13,12 @@ export const ParaQuemContainer = styled.section`
     text-align: center;
   }
 
-  .explanation {
-    text-align: center;
-    padding: 2rem;
-    font-size: 2.5rem;
-    font-weight: 600;
-
-    span {
-      color: var(--color-yellow);
-    }
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin: 3rem 0;
   }
 
   .grid {
@@ -31,8 +28,19 @@ export const ParaQuemContainer = styled.section`
     justify-content: space-between;
   }
 
+  .intermediate-title {
+    font-size: 1.5rem; /* 24px converted to rem */
+    line-height: 1.875rem; /* 30px converted to rem */
+    color: var(--color-white);
+    text-align: center;
+    margin: 3rem 0 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   button {
-    margin-top: 2rem;
+    margin-top: 4rem;
     justify-self: center;
   }
 
@@ -43,23 +51,20 @@ export const ParaQuemContainer = styled.section`
         margin-bottom: 3rem;
       }
 
-      .explanation {
-        font-size: 2rem;
-        width: 56rem;
-        margin-bottom: 3rem;
-
-        span {
-          font-size: 2rem;
-        }
-      }
-
       .placeholder {
         width: 9rem;
         height: auto;
         margin: 1rem;
       }
     }
+
     @media (max-width: 768px) {
+      .cards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+      }
+
       .grid {
         flex-direction: column;
         align-items: center;
@@ -69,40 +74,89 @@ export const ParaQuemContainer = styled.section`
       }
     }
 
-    ${css`
-      @media (max-width: 480px) {
-        h2 {
-          font-size: 3rem;
-          text-align: center;
-          margin-bottom: 2rem;
-        }
-
-        .explanation {
-          font-size: 1.5rem;
-          padding: 1.5rem;
-          width: 100%;
-
-          span {
-            font-size: 1.5rem;
-          }
-        }
-
-        .grid {
-          flex-direction: column;
-          align-items: center;
-          gap: 2rem;
-        }
-
-        button {
-          width: 100%;
-          max-width: 14.5rem;
-          align-self: center;
-          margin-top: 2rem;
-        }
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 2rem;
       }
-    `}
+
+      .cards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: 2rem 0;
+      }
+
+      .grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      button {
+        width: auto;
+        min-width: 12rem;
+        align-self: center;
+        margin-top: 2rem;
+      }
+    }
   `}
-`;
+`
+
+export const NewCard = styled(Card)`
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  gap: 1rem;
+
+  h2 {
+    font-size: 1.5rem; /* 24px converted to rem */
+    line-height: 1.875rem; /* 30px converted to rem */
+    color: var(--color-white);
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.5rem; /* 24px converted to rem */
+    line-height: 1.875rem; /* 30px converted to rem */
+    color: var(--color-yellow);
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    width: 30%;
+
+    h2 {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    width: 90%;
+    margin-bottom: 1rem;
+
+    h2 {
+      font-size: 1rem;
+      line-height: 1.3rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.3rem;
+    }
+  }
+`
 
 export const GridItem = styled(Card)`
   width: 25%;
@@ -199,4 +253,4 @@ export const GridItem = styled(Card)`
       width: 100%;
     }
   }
-`;
+`
