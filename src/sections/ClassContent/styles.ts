@@ -64,7 +64,7 @@ export const LeftContainer = styled.div`
     font-size: 4rem;
     margin-bottom: 16px;
     line-height: 4rem;
-    color: #ffffff;
+    color: var(--color-yellow);
     word-break: break-word;
   }
 
@@ -153,9 +153,9 @@ export const RightContainer = styled.div`
   }
 
   h3 {
+    color: var(--color-yellow);
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    font-family: var(--font-poppins);
     width: 100%;
   }
 

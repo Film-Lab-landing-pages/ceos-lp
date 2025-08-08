@@ -18,7 +18,7 @@ export default function SectionClassContent() {
   return (
     <ClassSection id="class-content">
       <Container>
-        <Title className="poppins-bold">Conteúdo Da Aula</Title>
+        <Title className="poppins-bold">Uma aula feita para você!</Title>
         <Flex>
           <LeftContainer>
             <Card>
@@ -40,14 +40,12 @@ export default function SectionClassContent() {
             <img src="/images/ceo.png" alt="CEO com pilha de dinheiro" />
           </CenterContainer>
           <RightContainer>
-            <h3 className="poppins-regular">DIGITAL TRANSFORMATION</h3>
+            <h3 className="poppins-bold">Destrave na Frente das Câmeras!</h3>
             <Card>
               <RightList>
                 <li>
                   <span className="poppins-bold">01</span>
-                  <p className="poppins-light">
-                    Método exclusivo para destravar nas câmeras.
-                  </p>
+                  <p className="poppins-light">Método exclusivo</p>
                 </li>
                 <li>
                   <span className="poppins-bold">02</span>
@@ -65,7 +63,7 @@ export default function SectionClassContent() {
             </Card>
           </RightContainer>
         </Flex>
-        <InscriptionButton />
+        <InscriptionButton text="Deixe de ser um CEO anônimo!" />
       </Container>
     </ClassSection>
   )
