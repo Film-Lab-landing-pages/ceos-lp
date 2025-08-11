@@ -1,7 +1,7 @@
 const itemContent = [
   {
     image: "/images/unknown.png",
-    title: "Falta de posicionamento e protagonismo dos donos",
+    title: "Falta de protagonismo dos donos",
     description:
       "A ausência do fundador enfraquece a conexão e desperdiça uma poderosa alavanca de autoridade.",
   },

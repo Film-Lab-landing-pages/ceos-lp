@@ -1,7 +1,13 @@
 "use client";
 
 import React from "react";
-import { Container, VistoCard, VistoSection } from "./styles";
+import {
+  CardContainer,
+  Container,
+  Subtitle,
+  VistoCard,
+  VistoSection,
+} from "./styles";
 import { Title } from "@/styles/globalStyles";
 import itemContent from "./itemContent";
 
@@ -9,16 +15,23 @@ const QuemNaoEVisto: React.FC = () => {
   return (
     <VistoSection>
       <Container>
-        <Title>Quem Não é Visto, Não é Lembrado</Title>
-        {itemContent.map((item, index) => (
-          <VistoCard key={index}>
-            <img src={item.image} alt={item.title} />
-            <div>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-            </div>
-          </VistoCard>
-        ))}
+        <Title>
+          Quem Não é Visto, <br /> Não é Lembrado
+        </Title>
+        <Subtitle>
+          3 pontos que acabam com o seu posicionamento digital:
+        </Subtitle>
+        <CardContainer>
+          {itemContent.map((item, index) => (
+            <VistoCard key={index}>
+              <img src={item.image} alt={item.title} />
+              <div>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
+            </VistoCard>
+          ))}
+        </CardContainer>
       </Container>
     </VistoSection>
   );

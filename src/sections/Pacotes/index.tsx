@@ -1,11 +1,11 @@
-'use client'
+"use client";
 
-import { Card, Title } from '@/styles/globalStyles'
-import * as S from './styles'
+import { Card, Title } from "@/styles/globalStyles";
+import * as S from "./styles";
 
 const Pacotes = () => {
   return (
-    <S.PacotesSection>
+    <S.PacotesSection id="bundles">
       <S.FlexContainer>
         <Title>Pacotes</Title>
 
@@ -72,14 +72,16 @@ const Pacotes = () => {
             </S.PacotesCard>
           </S.Pacote>
 
-          <S.Pacote className="recomendado">
+          <S.Pacote>
             <S.Icon src="/images/jupiter.png" alt="Ícone Júpiter" />
-            <S.PacoteTitle className="poppins-bold">JÚPITER</S.PacoteTitle>
-            <S.PacotesCard>
+            <S.PacoteTitle className="recomepoppins-bold">
+              JÚPITER
+            </S.PacoteTitle>
+            <S.PacotesCard className="recomendado">
               <S.CardHeader className="poppins-bold">Inclui:</S.CardHeader>
 
               <S.CardItem className="poppins-regular">
-                <span className="check">✔</span>8 reels
+                <span className="check">✔</span>12 reels
               </S.CardItem>
               <S.CardItem className="poppins-regular">
                 <span className="check">✔</span>6 carrosseis
@@ -88,19 +90,26 @@ const Pacotes = () => {
                 <span className="check">✔</span>Relatório mensal
               </S.CardItem>
               <S.CardItem className="poppins-regular">
-                <span className="check">✔</span>Gestão de redes sociais
+                <span className="check">✔</span>
+                <p>
+                  Estúdio, roteirização, produção/ gravação, direção e edição
+                </p>
               </S.CardItem>
               <S.CardItem className="poppins-regular">
-                <span className="check">✔</span>Estúdio, roteirização, produção/
-                gravação, direção e edição
+                <span className="check">✔</span>
+                <p className="bold-and-color">Gestão de redes sociais</p>
               </S.CardItem>
               <S.Selo className="poppins-bold">RECOMENDADO!</S.Selo>
             </S.PacotesCard>
           </S.Pacote>
         </S.PacotesGrid>
+        <S.WhatsappButton href="https://wa.me/5511999999999" target="_blank">
+          <img src="/images/whatsapp-icon.png" alt="WhatsApp Icon" />
+          <p>Fale agora com nossos consultores!</p>
+        </S.WhatsappButton>
       </S.FlexContainer>
     </S.PacotesSection>
-  )
-}
+  );
+};
 
-export default Pacotes
+export default Pacotes;

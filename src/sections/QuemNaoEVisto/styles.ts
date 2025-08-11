@@ -18,15 +18,12 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 5rem;
+  gap: 1rem;
   h2 {
-    font-size: 3.6rem;
+    font-size: 4.5rem;
+    width: 60%;
   }
-  h3 {
-    font-weight: 400;
-    font-size: 2rem;
-    font-style: regular;
-  }
+
   p {
     font-weight: 300;
     font-style: Light;
@@ -49,13 +46,18 @@ export const Container = styled.div`
 `;
 
 export const VistoCard = styled(Card)`
-  width: 60%;
   display: flex;
   align-items: center;
   gap: 2rem;
   padding: 2rem 4%;
   img {
     height: 70px;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 2rem;
+    font-style: regular;
   }
 
   @media (max-width: 480px) {
@@ -70,4 +72,19 @@ export const VistoCard = styled(Card)`
       height: 4em;
     }
   }
+`;
+
+export const Subtitle = styled.h3`
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  width: 60%;
+`;
+
+export const CardContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  width: 60%;
 `;

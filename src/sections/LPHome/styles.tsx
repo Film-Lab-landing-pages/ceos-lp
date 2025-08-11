@@ -28,7 +28,6 @@ export const Section = styled.section`
 export const Container = styled(GlobalContainer)`
   align-items: left;
   gap: 4rem;
-
   @media (max-width: 768px) {
     gap: 3rem;
   }

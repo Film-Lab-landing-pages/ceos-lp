@@ -99,8 +99,8 @@ export const CheckItem = styled.div`
 
   padding: 1rem 2rem;
   img {
-    width: 5rem;
-    height: 5rem;
+    width: 4.5rem;
+    height: 4.5rem;
   }
   .flex-item {
     width: 100%;

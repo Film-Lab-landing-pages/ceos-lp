@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-'use client'
+"use client";
 
-import { Title, Container, HeaderContainer } from '@/styles/globalStyles'
-import * as S from './styles'
+import { Title, Container, HeaderContainer } from "@/styles/globalStyles";
+import * as S from "./styles";
 
 const Apresentacao = () => {
   return (
@@ -11,8 +11,8 @@ const Apresentacao = () => {
         <nav className="hide-on-mobile">
           <img src="/images/logo_film-branco.png" alt="logo Filme Lab" />
           <a href="#">Home</a>
-          <a href="#">Solução</a>
-          <a href="#">Pacotes</a>
+          <a href="#solution">Solução</a>
+          <a href="#bundles">Pacotes</a>
         </nav>
         <img
           className="hide-on-desktop"
@@ -27,11 +27,11 @@ const Apresentacao = () => {
 
         <S.ApresentacaoContainer></S.ApresentacaoContainer>
         <S.ApresentacaoText className="poppins-light">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Assista completo um treinamento exclusivo para você!
         </S.ApresentacaoText>
       </S.ApresentacaoContainerWrapper>
     </S.ApresentacaoSection>
-  )
-}
+  );
+};
 
-export default Apresentacao
+export default Apresentacao;

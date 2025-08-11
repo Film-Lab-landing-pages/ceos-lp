@@ -13,7 +13,7 @@ export const SolucaoSection = styled(Section)`
     display: inline;
   }
 
-  @media (max-width: 1600px) {
+  @media (max-width: 1200px) {
     .hide-on-mobile {
       display: none;
     }
@@ -47,7 +47,7 @@ export const SubtitleWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 7.5rem;
+  margin-bottom: 5rem;
 
   @media (max-width: 480px) {
     margin-bottom: 3rem;
@@ -57,6 +57,7 @@ export const SubtitleWrapper = styled.div`
 export const SubtitleMainText = styled.p`
   color: var(--color-yellow);
   font-size: 1.5rem;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 1rem;
   max-width: 1600px;
@@ -71,23 +72,8 @@ export const SubtitleMainText = styled.p`
   }
 `;
 
-export const SubtitleSpan = styled.span`
+export const SubtitleSpan = styled(SubtitleMainText).attrs({ as: "span" })`
   color: var(--color-white);
-  font-weight: bold;
-  text-align: center;
-  font-size: 1.5rem;
-  text-align: center;
-  max-width: 1600px;
-
-  @media (max-width: 1024px) {
-    font-size: 2rem;
-    padding: 0 1rem;
-    margin-bottom: 7.5rem;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 1.2rem;
-  }
 `;
 
 export const CardWrapper = styled.div`
@@ -104,9 +90,9 @@ export const PositionedCard = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: 65%;
   margin-bottom: 5rem;
-  padding: 0 15px;
+  padding: 4rem 9rem 4rem 4rem;
 
   @media (max-width: 1024px) {
     width: 90% !important;
@@ -159,11 +145,12 @@ export const SolutionRow = styled.div`
 
 export const SolutionText = styled.div`
   max-width: 80%;
+  text-align: right;
 
   strong,
   p {
-    font-size: 34px;
-    line-height: 49px;
+    font-size: 2.2rem;
+    line-height: 3rem;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     margin: 0;

@@ -8,14 +8,17 @@ import { questions } from "./content";
 const SairDessa: React.FC = () => {
   return (
     <ChecklistSection>
-      <Title>
-        Checklist de quem <br className="hide-on-desktop" /> quer virar o jogo
-      </Title>
+      <Title>Você está pronto para virar esse jogo?</Title>
       <Container className="container">
         <Card className="flex-card">
           {questions.map((question, index) => (
             <CheckItem key={index + 70}>
-              <img key={index + 50} src="/images/checkbox.png" alt="estrela" />
+              <img
+                key={index + 50}
+                src="/images/rectangle.png"
+                alt="checkbox"
+              />
+
               <div key={index} className="flex-item">
                 <p>{question}</p>
               </div>

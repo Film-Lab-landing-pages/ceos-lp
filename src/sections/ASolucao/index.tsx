@@ -1,57 +1,52 @@
 /* eslint-disable @next/next/no-img-element */
-'use client'
+"use client";
 
-import { Card, Title } from '@/styles/globalStyles'
-import * as S from './styles'
+import { Card, Title } from "@/styles/globalStyles";
+import * as S from "./styles";
 
 const solutions = [
   {
-    number: '01',
+    number: "01",
     text: (
-      <>
-        <p>
-          <strong>Direção de cena</strong> pra te destravar
-        </p>
-        <br className="hide-on-mobile" />
-        <p>na frente das câmeras.</p>
-      </>
+      <p>
+        <strong>Direção de cena</strong> pra te destravar na frente das câmeras
+        e aprender a se posicionar com confiança, clareza e impacto.
+      </p>
     ),
   },
   {
-    number: '02',
+    number: "02",
     text: (
-      <>
-        <p>
-          Estratégia baseada em <strong>análise de dados.</strong>
-        </p>
-      </>
+      <p>
+        <strong>Estratégia digital</strong> para conquistar autoridade no
+        ambiente online
+      </p>
     ),
   },
   {
-    number: '03',
+    number: "03",
     text: (
-      <>
-        <strong>Soluções 360</strong>
-        <br />
-        <p>sem dor de cabeça.</p>
-      </>
+      <p>
+        <strong>Soluções 360</strong> da câmera à captação — sem complicação,
+        com resultado.
+      </p>
     ),
   },
-]
+];
 
 const ASolucao = () => {
   return (
-    <S.SolucaoSection>
+    <S.SolucaoSection id="solution">
       <S.FlexContainer>
-        <Title>A Solução</Title>
+        <Title>Temos a solução para você!</Title>
 
         <S.SubtitleWrapper>
           <S.SubtitleMainText>
-            Se respondeu “não” pra qualquer item, relaxa.
+            É por isso que criamos nossos planos de gestão com estratégia e
+            intenção —
           </S.SubtitleMainText>
           <S.SubtitleSpan>
-            É por isso que criamos nossos planos de gestão com estratégia e
-            intenção — pra fazer sua presença digital valer a pena.
+            pra fazer sua presença digital valer a pena.
           </S.SubtitleSpan>
         </S.SubtitleWrapper>
 
@@ -74,7 +69,7 @@ const ASolucao = () => {
         />
       </S.FlexContainer>
     </S.SolucaoSection>
-  )
-}
+  );
+};
 
-export default ASolucao
+export default ASolucao;

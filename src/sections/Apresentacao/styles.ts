@@ -74,6 +74,7 @@ export const ApresentacaoContainer = styled.div`
 
 export const ApresentacaoText = styled.p`
   font-size: 2.125rem;
+  font-weight: 700;
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.5;
 
