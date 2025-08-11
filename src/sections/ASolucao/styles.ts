@@ -56,7 +56,7 @@ export const SubtitleWrapper = styled.div`
 
 export const SubtitleMainText = styled.p`
   color: var(--color-yellow);
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 1rem;
