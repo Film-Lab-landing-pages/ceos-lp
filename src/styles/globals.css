@@ -1,9 +1,9 @@
 /* Inportação de Variáveis */
-@import "./variables.css";
+@import './variables.css';
 
 /* Inportações de Fontes */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Reset dos Estilos Globais */
 
@@ -32,6 +32,9 @@ body {
 }
 .poppins-medium {
   font-weight: 500;
+}
+.poppins-semibold {
+  font-weight: 600;
 }
 .poppins-light {
   font-weight: 300;

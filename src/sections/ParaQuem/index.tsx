@@ -1,22 +1,40 @@
-"use client";
-import React from "react";
-import { GridItem, ParaQuemContainer } from "./styles";
-import { Button, Card, Title } from "@/styles/globalStyles";
-import InscriptionButton from "@/components/InscriptionButton";
-import { itemContent } from "./itemContent";
+'use client'
+import React from 'react'
+import { GridItem, NewCard, ParaQuemContainer } from './styles'
+import { Title } from '@/styles/globalStyles'
+import InscriptionButton from '@/components/InscriptionButton'
+import { itemContent } from './itemContent'
 
 const ParaQuem: React.FC = () => {
   return (
     <ParaQuemContainer id="para-quem">
-      <Title className="alignedTitle">Para Quem É Esta Aula?</Title>
-      <Card className="explanation">
-        Destinado a CEOs que querem{" "}
-        <span>transformar presença digital em receita direta</span> através de
-        conteúdo estratégico, fundadores que{" "}
-        <span>buscam acelerar crescimento da startup </span> via marca pessoal
-        gerando leads qualificados, e executivos C-Level que desejam{" "}
-        <span>impulsionar resultados.</span>
-      </Card>
+      <Title className="alignedTitle">Para quem é esta MasterClass?</Title>
+
+      <div className="cards-container">
+        <NewCard>
+          <h2 className="poppins-regular">CEOS que querem</h2>
+          <p className="poppins-semibold">
+            transformar presença digital em receita direta.
+          </p>
+        </NewCard>
+
+        <NewCard>
+          <h2 className="poppins-regular">Fundadores que </h2>
+          <p className="poppins-semibold">
+            buscam acelerar crescimento da startup.
+          </p>
+        </NewCard>
+
+        <NewCard>
+          <h2 className="poppins-regular">Executivos C-Level que desejam</h2>
+          <p className="poppins-semibold">impulsionar resultados.</p>
+        </NewCard>
+      </div>
+
+      <h3 className="poppins-semibold intermediate-title">
+        Também é para você que deseja...
+      </h3>
+
       <div className="grid">
         {itemContent.map((item, index) => (
           <GridItem key={index}>
@@ -30,9 +48,10 @@ const ParaQuem: React.FC = () => {
           </GridItem>
         ))}
       </div>
-      <InscriptionButton />
-    </ParaQuemContainer>
-  );
-};
 
-export default ParaQuem;
+      <InscriptionButton text="INSCREVA-SE E APROVEITE!" />
+    </ParaQuemContainer>
+  )
+}
+
+export default ParaQuem
