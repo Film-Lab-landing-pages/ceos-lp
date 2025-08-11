@@ -31,6 +31,13 @@ export const Container = styled.div`
     line-height: 2.5em;
     opacity: 0.7;
   }
+  @media (max-width: 768px) {
+    align-items: center;
+    h2 {
+      font-size: 4.5rem;
+      width: 100%;
+    }
+  }
 
   @media (max-width: 480px) {
     gap: 2rem;
@@ -60,8 +67,10 @@ export const VistoCard = styled(Card)`
     font-style: regular;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     width: 100%;
+  }
+  @media (max-width: 480px) {
     margin: 0 auto;
     padding: 1.5rem 5%;
 
@@ -80,6 +89,12 @@ export const Subtitle = styled.h3`
   font-size: 2rem;
   margin-bottom: 1rem;
   width: 60%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  @media (max-width: 480px) {
+    text-align: center;
+  }
 `;
 
 export const CardContainer = styled.div`
@@ -87,4 +102,8 @@ export const CardContainer = styled.div`
   flex-direction: column;
   gap: 5rem;
   width: 60%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
