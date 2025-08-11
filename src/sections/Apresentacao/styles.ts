@@ -22,13 +22,25 @@ export const ApresentacaoSection = styled(Section)`
 `;
 export const ApresentacaoTitle = styled.h1`
   color: var(--color-yellow);
+  padding: 2rem 5rem;
   font-size: 5.3rem;
-  line-height: 114px;
+  line-height: 7rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-align: center;
 
   @media (max-width: 1024px) {
     font-size: 4rem;
-    line-height: 100px;
+    line-height: 5rem;
     text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem;
   }
 
   @media (max-width: 480px) {
