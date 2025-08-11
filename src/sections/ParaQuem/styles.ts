@@ -167,6 +167,7 @@ export const GridItem = styled(Card)`
   text-align: center;
   gap: 1rem;
   padding: 2rem 0 5rem;
+  border: 1px solid var(--color-yellow);
 
   .content {
     display: flex;
