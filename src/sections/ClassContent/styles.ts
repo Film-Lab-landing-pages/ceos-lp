@@ -22,9 +22,8 @@ export const ClassSection = styled(Section)`
 
 export const Container = styled(GlobalContainer)`
   width: 80%;
-  button {
-    margin: 0 auto;
-  }
+  display: flex;
+  flex-direction: column;
 `
 
 export const Flex = styled.div`
@@ -41,15 +40,19 @@ export const Flex = styled.div`
   }
 `
 
-// export const Subtitle = styled.h4`
-//   color: #ccc;
-//   font-size: 2rem;
-//   line-height: 1;
-//   @media (max-width: 480px) {
-//     font-size: 1.2rem;
-//     margin: 0 auto;
-//   }
-// `
+export const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 28.5%;
+  width: 40%;
+
+  @media (max-width: 1024px) {
+    margin-left: 0;
+    width: 100%;
+  }
+`
 
 export const LeftContainer = styled.div`
   width: 35%;
