@@ -120,13 +120,12 @@ export const CardContent = styled.div`
 `;
 export const SolutionRow = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
   width: 100%;
 
   @media (max-width: 1024px) {
-    gap: 1rem;
+    gap: 4rem;
   }
 
   @media (max-width: 768px) {
@@ -203,10 +202,12 @@ export const SolutionText = styled.div`
 
 export const SolutionNumber = styled.span`
   font-size: 70px;
+  width: 10%;
   line-height: 33px;
   font-family: "Poppins", sans-serif;
   font-weight: 700; /* poppins-bold */
   color: var(--color-yellow);
+  text-align: left;
 
   @media (max-width: 768px) {
     font-size: 55px;
