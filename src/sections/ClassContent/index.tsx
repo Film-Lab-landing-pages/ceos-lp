@@ -10,6 +10,7 @@ import {
   ClassSection,
   Container,
   Flex,
+  ButtonContainer,
 } from './styles'
 import { Title, Card } from '@/styles/globalStyles'
 import InscriptionButton from '@/components/InscriptionButton'
@@ -63,7 +64,9 @@ export default function SectionClassContent() {
             </Card>
           </RightContainer>
         </Flex>
-        <InscriptionButton text="Deixe de ser um CEO anônimo!" />
+        <ButtonContainer>
+          <InscriptionButton text="Deixe de ser um CEO anônimo!" />
+        </ButtonContainer>
       </Container>
     </ClassSection>
   )

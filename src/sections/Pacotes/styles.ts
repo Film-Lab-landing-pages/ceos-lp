@@ -1,5 +1,5 @@
-import { Card, Section } from "@/styles/globalStyles";
-import styled from "styled-components";
+import { Card, Section } from '@/styles/globalStyles'
+import styled from 'styled-components'
 
 export const PacotesSection = styled(Section)`
   margin: 5rem 0 2rem;
@@ -8,7 +8,7 @@ export const PacotesSection = styled(Section)`
   align-items: center;
   width: 100%;
   background-color: var(--color-black);
-`;
+`
 
 export const FlexContainer = styled.div`
   display: flex;
@@ -20,7 +20,7 @@ export const FlexContainer = styled.div`
   @media (max-width: 480px) {
     width: 95%;
   }
-`;
+`
 
 export const SubtitleWrapper = styled.div`
   display: flex;
@@ -32,7 +32,7 @@ export const SubtitleWrapper = styled.div`
   @media (max-width: 480px) {
     margin-top: 2rem;
   }
-`;
+`
 
 export const SubtitleMainText = styled.p`
   color: var(--color-yellow);
@@ -50,7 +50,7 @@ export const SubtitleMainText = styled.p`
     font-size: 1.4rem;
     padding: 0 1rem;
   }
-`;
+`
 
 export const SubtitleSpan = styled.span`
   color: var(--color-white);
@@ -68,7 +68,7 @@ export const SubtitleSpan = styled.span`
     font-size: 1.4rem;
     padding: 0 1rem;
   }
-`;
+`
 
 export const PacotesGrid = styled.div`
   display: grid;
@@ -76,6 +76,7 @@ export const PacotesGrid = styled.div`
   gap: 2rem;
   width: 100%;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 
   @media (max-width: 1024px) {
     display: flex;
@@ -87,7 +88,7 @@ export const PacotesGrid = styled.div`
   @media (max-width: 480px) {
     gap: 2rem;
   }
-`;
+`
 
 export const Pacote = styled.div`
   display: flex;
@@ -107,7 +108,7 @@ export const Pacote = styled.div`
     padding: 1rem;
     margin: 1.5rem 0;
   }
-`;
+`
 
 export const Icon = styled.img`
   width: 9rem;
@@ -126,7 +127,7 @@ export const Icon = styled.img`
     object-fit: contain;
     display: block;
   }
-`;
+`
 
 export const PacoteTitle = styled.h3`
   color: #ffc802;
@@ -141,7 +142,7 @@ export const PacoteTitle = styled.h3`
     font-size: 3.2rem;
     text-align: center;
   }
-`;
+`
 export const CardHeader = styled.li`
   list-style: none;
   padding: 0.3rem;
@@ -158,7 +159,7 @@ export const CardHeader = styled.li`
     font-size: 1.3rem;
     text-align: center;
   }
-`;
+`
 export const PacotesCard = styled(Card)`
   display: flex;
   flex-direction: column;
@@ -178,7 +179,7 @@ export const PacotesCard = styled(Card)`
   @media (max-width: 480px) {
     padding: 1.5rem;
   }
-`;
+`
 
 export const CardItem = styled.li`
   display: flex;
@@ -207,7 +208,7 @@ export const CardItem = styled.li`
     text-align: left;
     font-weight: 400;
   }
-`;
+`
 
 export const CardItemInativo = styled(CardItem)`
   span.cross {
@@ -215,7 +216,7 @@ export const CardItemInativo = styled(CardItem)`
     font-weight: bold;
     margin-right: 0.5rem;
   }
-`;
+`
 
 export const Selo = styled.div`
   margin-top: auto;
@@ -235,7 +236,7 @@ export const Selo = styled.div`
     font-size: 2.8rem;
     padding: 0.3rem 0.8rem;
   }
-`;
+`
 
 export const WhatsappButton = styled.a`
   display: flex;
@@ -263,4 +264,4 @@ export const WhatsappButton = styled.a`
   @media (max-width: 480px) {
     font-size: 1.4rem;
   }
-`;
+`
