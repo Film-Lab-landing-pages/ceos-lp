@@ -5,6 +5,9 @@ import { IMaskInput } from "react-imask";
 import { CloseButton, InscriptionContainer } from "./styles";
 import { useInscriptionStore } from "@/store/store";
 import { useRouter } from "next/navigation";
+import axios from "axios";
+
+import apiClient from "@/services/apiClient";
 
 const InscriptionForm: React.FC = () => {
   const { isFormVisible, isActive, hideForm } = useInscriptionStore();
@@ -86,17 +89,59 @@ const InscriptionForm: React.FC = () => {
 
     setIsSubmitting(true);
 
-    try {
-      console.log("Form data submitted:", formData);
+    const formPayload = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+    };
 
-      await new Promise((resolve) => setTimeout(resolve, 1000)); // Simula uma requisição
+    console.log("Submitting form data:", formPayload);
+    console.log("API Base URL:", apiClient.defaults.baseURL);
+
+    try {
+      /*    const leadResponse = await apiClient.post(`/leads`, formPayload);
+
+      console.log("Form data submitted!", leadResponse.data);
+ */
+      const userResponse = await apiClient.post(`/users`, formPayload);
+
+      console.log("User data submitted!", userResponse.data);
+
+      setFormData({ name: "", email: "", phone: "" });
+      router.push("/ceo-masterclass");
+      hideForm();
     } catch (error) {
       console.error("Error submitting form:", error);
+
+      if (axios.isAxiosError(error)) {
+        if (error.response) {
+          // Servidor respondeu com erro (4xx, 5xx)
+          console.error("Response Status:", error.response.status);
+          console.error("Response Data:", error.response.data);
+          console.error("Response Headers:", error.response.headers);
+        } else if (error.request) {
+          // Requisição foi feita mas não houve resposta
+          console.error("No response received. Request config:", {
+            url: error.config?.url,
+            method: error.config?.method,
+            baseURL: error.config?.baseURL,
+            timeout: error.config?.timeout,
+          });
+          console.error("Full request object:", error.request);
+        } else {
+          // Erro na configuração da requisição
+          console.error("Request setup error:", error.message);
+        }
+        console.error("Error config:", error.config);
+      } else {
+        console.error("Non-Axios error:", error);
+      }
+
+      // Mostrar erro para o usuário (opcional)
+      alert("Erro ao enviar formulário. Tente novamente.");
     } finally {
       setIsSubmitting(false);
     }
-    router.push("/ceo-masterclass");
-    hideForm();
   };
 
   return (
@@ -106,19 +151,21 @@ const InscriptionForm: React.FC = () => {
           id="inscription-form"
           className={isActive ? "active" : ""}
         >
-          <form>
+          <form onSubmit={handleFormSubmit}>
             <CloseButton onClick={hideForm} className="close-button">
               ×
             </CloseButton>
             <input
               type="text"
               placeholder="Nome"
+              value={formData.name}
               onChange={handleInputChange("name")}
             />
             <p className="error-message">{errors.name}</p>
             <input
               type="email"
               placeholder="Email"
+              value={formData.email}
               onChange={handleInputChange("email")}
             />
             <p className="error-message">{errors.email}</p>
@@ -126,13 +173,12 @@ const InscriptionForm: React.FC = () => {
               mask="(00) 00000-0000"
               name="celular"
               placeholder="(99) 99999-9999"
+              value={formData.phone}
               unmask={true}
-              onChange={handleInputChange("phone")}
+              onAccept={handlePhoneChange}
             />
             <p className="error-message">{errors.phone}</p>
-            <button type="submit" onClick={handleFormSubmit}>
-              Inscrição
-            </button>
+            <button type="submit">Inscrição</button>
           </form>
           <div onClick={hideForm} className="overlay"></div>
         </InscriptionContainer>
